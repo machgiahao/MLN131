@@ -4,46 +4,47 @@ import { useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Chapter from "@/components/Chapter";
 import ProgressIndicator from "@/components/ProgressIndicator";
+import IntroSection from "@/components/IntroSection";
 
 const chapters = [
   {
     id: 1,
     number: "01",
-    title: "The Beginning",
-    description: "Every great story starts somewhere. This is where our journey begins.",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    title: "Bầu cử và lá phiếu cử tri",
+    description: "Tìm hiểu về ý nghĩa và tầm quan trọng của lá phiếu trong bầu cử",
+    videoUrl: "https://drive.google.com/file/d/1JUU-CG0FhbDKHFFJ2u5O90GpJ7jEEpk8/preview",
     bgColor: "#0a0a0a"
   },
   {
     id: 2,
     number: "02",
-    title: "The Discovery",
-    description: "As we venture deeper, new revelations await at every turn.",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+    title: "Quy trình và cơ chế bầu cử ở Việt Nam",
+    description: "Tìm hiểu về quy trình bầu cử và cơ chế hoạt động tại Việt Nam",
+    videoUrl: "https://drive.google.com/file/d/1v3myzsxWp1iaIRmUtGqHp3Ygp7QhDIrq/preview",
     bgColor: "#1a1a2e"
   },
   {
     id: 3,
     number: "03",
-    title: "The Challenge",
-    description: "Every journey faces obstacles. This is our moment of truth.",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+    title: "Bầu cử ở Hoa Kỳ",
+    description: "Khám phá hệ thống bầu cử phức tạp và độc đáo của Hoa Kỳ",
+    videoUrl: "https://drive.google.com/file/d/10erMZ_5fmDWeZLPVHUtgsSBFkWD1nJtg/preview",
     bgColor: "#16213e"
   },
   {
     id: 4,
     number: "04",
-    title: "The Transformation",
-    description: "Through struggle comes growth. We emerge changed.",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+    title: "So sánh bầu cử ở Việt Nam và Hoa Kỳ",
+    description: "Vì sao Việt Nam lại không theo hệ thống bầu cử của Hoa Kỳ?",
+    videoUrl: "https://drive.google.com/file/d/1NkFupNPUJyBGweVtfOs9t2T-pTgTdDlk/preview",
     bgColor: "#0f3460"
   },
   {
     id: 5,
     number: "05",
-    title: "The Resolution",
-    description: "All stories must end. But endings are just new beginnings.",
-    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+    title: "Quyền làm chủ của nhân dân",
+    description: "Sự tham gia của người dân trong quá trình bầu cử quyết định vận mệnh quốc gia",
+    videoUrl: "https://drive.google.com/file/d/1j8U2d-tkKaMm3HbfB27QVx97BD_QezEy/preview",
     bgColor: "#533483"
   }
 ];
@@ -56,9 +57,10 @@ export default function Home() {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      const currentChapter = Math.min(
-        Math.floor(scrollPosition / windowHeight),
-        chapters.length - 1
+      const currentIndex = Math.floor(scrollPosition / windowHeight) - 1;
+      const currentChapter = Math.max(
+        0,
+        Math.min(currentIndex, chapters.length - 1)
       );
       setActiveChapter(currentChapter);
     };
@@ -74,14 +76,16 @@ export default function Home() {
   );
 
   return (
-    <motion.main 
+    <motion.main
       style={{ backgroundColor }}
       className="min-h-screen transition-colors duration-700"
     >
-      <ProgressIndicator 
-        total={chapters.length} 
-        current={activeChapter} 
+      <ProgressIndicator
+        total={chapters.length}
+        current={activeChapter}
       />
+
+      <IntroSection />
 
       {chapters.map((chapter, index) => (
         <Chapter
