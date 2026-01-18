@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Bầu cử ở Việt Nam – Quyền làm chủ của nhân dân",
   description: "Trải nghiệm kể chuyện tương tác về bầu cử và quyền làm chủ của nhân dân Việt Nam – Nhóm 3",
+  icons: {
+    icon: "/favicon.png",
+  },
 
   openGraph: {
     title: "Bầu cử ở Việt Nam – Quyền làm chủ của nhân dân",
