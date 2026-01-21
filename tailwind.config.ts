@@ -17,8 +17,8 @@ const config: Config = {
         'light-gold': '#F4E4C1',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Crimson Pro', 'Merriweather', 'Georgia', 'serif'],
+        sans: ['Noto Sans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        serif: ['Noto Serif', 'Georgia', 'Times New Roman', 'serif'],
       },
       backgroundImage: {
         'lotus-pattern': "url('data:image/svg+xml,%3Csvg width=\"80\" height=\"80\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath d=\"M40 10 Q50 20 40 30 Q30 20 40 10 M40 50 Q50 60 40 70 Q30 60 40 50\" stroke=\"%23D4AF37\" stroke-width=\"0.5\" fill=\"none\" opacity=\"0.06\"/%3E%3C/svg%3E')",

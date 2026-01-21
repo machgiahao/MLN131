@@ -7,226 +7,264 @@ export default function BauCuHoaKyPage() {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
-    <div className="min-h-screen py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <div className="text-8xl mb-6">🇺🇸</div>
-          <h1 className="text-6xl md:text-7xl font-serif font-bold text-warm-gray mb-6">
-            BẦU CỬ HOA KỲ
-          </h1>
-          <div className="h-1 w-32 bg-gradient-to-r from-blue-700 to-red-700 mx-auto mb-8" />
-          <p className="text-2xl text-warm-gray/70 max-w-3xl mx-auto">
-            Hệ thống bầu cử và dân chủ đại diện tại Hoa Kỳ
-          </p>
-        </motion.div>
-
-        {/* Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          {/* Left Column */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="space-y-8"
-          >
-            <section className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-blue-200/50">
-              <h2 className="text-3xl font-serif font-bold text-warm-gray mb-4 flex items-center gap-3">
-                <span className="text-4xl">🏛️</span>
-                Hệ thống đại cử tri
-              </h2>
-              <p className="text-lg text-warm-gray/80 leading-relaxed mb-6">
-                Hoa Kỳ sử dụng hệ thống Electoral College (Đại cử tri đoàn) để bầu Tổng thống. 
-                Người dân bầu cho các đại cử tri, và các đại cử tri này bầu Tổng thống.
-              </p>
-              <div className="bg-blue-50 rounded-xl p-6 border-l-4 border-blue-700">
-                <div className="text-4xl font-bold text-blue-700 mb-2">538</div>
-                <p className="text-blue-900 font-semibold">Tổng số đại cử tri</p>
-                <p className="text-sm text-blue-700 mt-2">Cần 270 phiếu để thắng cử</p>
-              </div>
-            </section>
-
-            <section className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-blue-200/50">
-              <h2 className="text-3xl font-serif font-bold text-warm-gray mb-4 flex items-center gap-3">
-                <span className="text-4xl">📋</span>
-                Quy trình bầu cử
-              </h2>
-              <div className="space-y-4">
-                {[
-                  { step: '1', title: 'Primaries', desc: 'Bầu chọn ứng viên trong đảng' },
-                  { step: '2', title: 'Conventions', desc: 'Đại hội đảng chính thức đề cử' },
-                  { step: '3', title: 'Campaign', desc: 'Vận động tranh cử toàn quốc' },
-                  { step: '4', title: 'Election Day', desc: 'Ngày bầu cử chính thức' },
-                  { step: '5', title: 'Electoral Vote', desc: 'Đại cử tri bỏ phiếu' }
-                ].map((item, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: -20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: 0.3 + index * 0.1 }}
-                    className="flex gap-4 items-start"
-                  >
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-700 to-red-700 flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
-                      {item.step}
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-warm-gray text-lg">{item.title}</h4>
-                      <p className="text-warm-gray/70">{item.desc}</p>
-                    </div>
-                  </motion.div>
-                ))}
-              </div>
-            </section>
-
-            <section className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-blue-200/50">
-              <h2 className="text-3xl font-serif font-bold text-warm-gray mb-4 flex items-center gap-3">
-                <span className="text-4xl">⚖️</span>
-                Hai đảng chính
-              </h2>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-xl p-6 text-center">
-                  <div className="text-4xl mb-2">🔵</div>
-                  <div className="font-bold text-xl mb-2">Democratic</div>
-                  <div className="text-sm opacity-90">Đảng Dân chủ</div>
-                </div>
-                <div className="bg-gradient-to-br from-red-600 to-red-800 text-white rounded-xl p-6 text-center">
-                  <div className="text-4xl mb-2">🔴</div>
-                  <div className="font-bold text-xl mb-2">Republican</div>
-                  <div className="text-sm opacity-90">Đảng Cộng hòa</div>
-                </div>
-              </div>
-            </section>
-          </motion.div>
-
-          {/* Right Column */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="space-y-8"
-          >
-            {/* Video Section */}
-            <div className="bg-gradient-to-br from-blue-500/10 to-red-500/10 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-blue-300/50">
-              <h3 className="text-2xl font-serif font-bold text-warm-gray mb-6 flex items-center gap-3">
-                <span className="text-3xl">🎬</span>
-                Video giới thiệu
-              </h3>
-              
-              {showVideo ? (
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="aspect-video rounded-xl overflow-hidden shadow-xl border-4 border-white/50 mb-4"
-                >
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                    title="Bầu cử Hoa Kỳ"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </motion.div>
-              ) : (
-                <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  className="aspect-video bg-gradient-to-br from-blue-700 to-red-700 rounded-xl flex items-center justify-center cursor-pointer mb-4 shadow-xl"
-                  onClick={() => setShowVideo(true)}
-                >
-                  <div className="text-center">
-                    <div className="text-6xl mb-4">▶️</div>
-                    <p className="text-white font-semibold text-lg">Click để xem video</p>
-                  </div>
-                </motion.div>
-              )}
-
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => setShowVideo(!showVideo)}
-                className="w-full px-6 py-3 bg-gradient-to-r from-blue-700 to-red-700 text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all"
-              >
-                {showVideo ? 'Ẩn Video' : 'Xem Video'}
-              </motion.button>
-            </div>
-
-            {/* Stats */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-blue-200/50">
-              <h3 className="text-2xl font-serif font-bold text-warm-gray mb-6 flex items-center gap-3">
-                <span className="text-3xl">📊</span>
-                Thông tin quan trọng
-              </h3>
-              <div className="space-y-4">
-                {[
-                  { label: 'Số đại cử tri', value: '538 phiếu', icon: '🗳️' },
-                  { label: 'Cần để thắng cử', value: '270 phiếu', icon: '🎯' },
-                  { label: 'Nhiệm kỳ Tổng thống', value: '4 năm', icon: '📅' },
-                  { label: 'Số bang', value: '50 bang', icon: '🗺️' },
-                  { label: 'Độ tuổi bầu cử', value: 'Từ 18 tuổi', icon: '👤' }
-                ].map((stat, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5 + index * 0.1 }}
-                    className="flex items-center justify-between p-4 bg-blue-50 rounded-xl border border-blue-200"
-                  >
-                    <div className="flex items-center gap-3">
-                      <span className="text-2xl">{stat.icon}</span>
-                      <span className="text-warm-gray/70">{stat.label}</span>
-                    </div>
-                    <span className="font-semibold text-warm-gray">{stat.value}</span>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
-
-            {/* Đặc điểm */}
-            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-blue-200/50">
-              <h3 className="text-2xl font-serif font-bold text-warm-gray mb-4 flex items-center gap-3">
-                <span className="text-3xl">⭐</span>
-                Đặc điểm nổi bật
-              </h3>
-              <div className="space-y-3">
-                {[
-                  'Winner-takes-all (Người thắng nhận tất cả)',
-                  'Swing states quyết định kết quả',
-                  'Vận động tranh cử quy mô lớn',
-                  'Chi phí tranh cử cao'
-                ].map((item, index) => (
-                  <div key={index} className="flex items-center gap-3 text-warm-gray/80">
-                    <span className="text-blue-600 text-xl">✓</span>
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </motion.div>
+    <div className="min-h-screen bg-gray-950">
+      {/* LAYOUT 3: Split-Screen / Cards Grid - American Style */}
+      
+      {/* Hero Section - Full Width */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="relative h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-red-900 to-blue-900"
+      >
+        {/* Stars pattern background */}
+        <div className="absolute inset-0 opacity-10">
+          {[...Array(50)].map((_, i) => (
+            <div
+              key={i}
+              className="absolute w-1 h-1 bg-white rounded-full"
+              style={{
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+                animation: `twinkle ${2 + Math.random() * 3}s infinite`
+              }}
+            />
+          ))}
         </div>
 
-        {/* Bottom Summary */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7 }}
-          className="bg-gradient-to-r from-blue-700 to-red-700 text-white rounded-2xl p-10 shadow-2xl text-center"
-        >
-          <h3 className="text-3xl font-serif font-bold mb-4">
-            Tóm tắt chương
-          </h3>
-          <p className="text-xl leading-relaxed max-w-4xl mx-auto">
-            Hệ thống bầu cử Hoa Kỳ đặc trưng bởi cơ chế đại cử tri đoàn (Electoral College), 
-            với hai đảng chính trị chủ đạo. Quy trình bầu cử phức tạp, từ bầu sơ bộ đến 
-            bầu cử chính thức, phản ánh hệ thống dân chủ đại diện lâu đời của Hoa Kỳ.
-          </p>
-        </motion.div>
+        <div className="relative z-10 text-center px-6">
+          <motion.div
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3 }}
+            className="inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-2 rounded-full font-bold mb-8 border border-white/30"
+          >
+            CHAPTER 03
+          </motion.div>
+          <motion.h1
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="text-7xl md:text-9xl font-black text-white mb-6"
+          >
+            BẦU CỬ<br />
+            <span className="bg-gradient-to-r from-blue-400 via-white to-red-400 bg-clip-text text-transparent">
+              HOA KỲ
+            </span>
+          </motion.h1>
+          <motion.p
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.7 }}
+            className="text-2xl text-gray-300 max-w-3xl mx-auto"
+          >
+            Hệ thống bầu cử hai đảng và cơ chế đại cử tri
+          </motion.p>
+          
+          {/* Scroll indicator */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2 }}
+            className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          >
+            <div className="animate-bounce text-white text-4xl">↓</div>
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* Main Content - Dark Mode with Cards */}
+      <div className="bg-gray-950 py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          
+          {/* Video Section - Cinematic */}
+          <motion.section
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-24"
+          >
+            <div className="bg-gradient-to-r from-blue-900/50 to-red-900/50 rounded-3xl p-2">
+              <div className="bg-gray-900 rounded-2xl p-8">
+                {showVideo ? (
+                  <div className="aspect-video rounded-xl overflow-hidden bg-black">
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      frameBorder="0"
+                      allowFullScreen
+                    />
+                  </div>
+                ) : (
+                  <div 
+                    onClick={() => setShowVideo(true)}
+                    className="aspect-video rounded-xl bg-gradient-to-br from-blue-600 via-purple-600 to-red-600 flex items-center justify-center cursor-pointer hover:scale-[1.01] transition-transform group"
+                  >
+                    <div className="text-center text-white">
+                      <div className="text-8xl mb-4 group-hover:scale-110 transition-transform">▶</div>
+                      <p className="text-3xl font-bold">WATCH VIDEO</p>
+                    </div>
+                  </div>
+                )}
+                <button
+                  onClick={() => setShowVideo(!showVideo)}
+                  className="mt-6 w-full py-5 bg-gradient-to-r from-blue-600 to-red-600 text-white rounded-xl font-bold text-xl hover:shadow-2xl hover:shadow-blue-500/50 transition-all"
+                >
+                  {showVideo ? 'HIDE VIDEO' : 'PLAY VIDEO'}
+                </button>
+              </div>
+            </div>
+          </motion.section>
+
+          {/* Split Cards Grid */}
+          <div className="grid lg:grid-cols-2 gap-8 mb-20">
+            {/* Left Column - Democratic Party */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-8"
+            >
+              <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-3xl p-8 border border-blue-700">
+                <h2 className="text-5xl font-black text-blue-300 mb-6">ĐẢNG DÂN CHỦ</h2>
+                <div className="space-y-4">
+                  <div className="bg-blue-950/50 rounded-xl p-5 backdrop-blur">
+                    <h3 className="text-xl font-bold text-blue-200 mb-2">Màu đại diện</h3>
+                    <p className="text-gray-300">Xanh dương (Blue)</p>
+                  </div>
+                  <div className="bg-blue-950/50 rounded-xl p-5 backdrop-blur">
+                    <h3 className="text-xl font-bold text-blue-200 mb-2">Biểu tượng</h3>
+                    <p className="text-gray-300">Con lừa (Donkey)</p>
+                  </div>
+                  <div className="bg-blue-950/50 rounded-xl p-5 backdrop-blur">
+                    <h3 className="text-xl font-bold text-blue-200 mb-2">Định hướng</h3>
+                    <p className="text-gray-300">Tự do, cải cách xã hội</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Right Column - Republican Party */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-8"
+            >
+              <div className="bg-gradient-to-br from-red-900 to-red-800 rounded-3xl p-8 border border-red-700">
+                <h2 className="text-5xl font-black text-red-300 mb-6">ĐẢNG CỘNG HÒA</h2>
+                <div className="space-y-4">
+                  <div className="bg-red-950/50 rounded-xl p-5 backdrop-blur">
+                    <h3 className="text-xl font-bold text-red-200 mb-2">Màu đại diện</h3>
+                    <p className="text-gray-300">Đỏ (Red)</p>
+                  </div>
+                  <div className="bg-red-950/50 rounded-xl p-5 backdrop-blur">
+                    <h3 className="text-xl font-bold text-red-200 mb-2">Biểu tượng</h3>
+                    <p className="text-gray-300">Con voi (Elephant)</p>
+                  </div>
+                  <div className="bg-red-950/50 rounded-xl p-5 backdrop-blur">
+                    <h3 className="text-xl font-bold text-red-200 mb-2">Định hướng</h3>
+                    <p className="text-gray-300">Bảo thủ, tự do kinh tế</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Electoral College System */}
+          <motion.section
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-20"
+          >
+            <h2 className="text-5xl font-black text-white text-center mb-12">
+              HỆ THỐNG ĐẠI CỬ TRI
+            </h2>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                { number: '538', label: 'Tổng đại cử tri', desc: 'Electoral votes' },
+                { number: '270', label: 'Cần để thắng', desc: 'To win presidency' },
+                { number: '50+DC', label: 'Bang tham gia', desc: 'States + DC' },
+              ].map((stat, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                  className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 border border-gray-700 hover:border-blue-500 transition-all hover:scale-105"
+                >
+                  <div className="text-6xl font-black bg-gradient-to-r from-blue-400 to-red-400 bg-clip-text text-transparent mb-3">
+                    {stat.number}
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-2">{stat.label}</h3>
+                  <p className="text-gray-400 italic">{stat.desc}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.section>
+
+          {/* Process Cards */}
+          <motion.section
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-5xl font-black text-white text-center mb-12">
+              QUY TRÌNH BẦU CỬ
+            </h2>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { step: '01', title: 'Primaries', desc: 'Bầu chọn ứng viên trong đảng' },
+                { step: '02', title: 'Conventions', desc: 'Đại hội đảng chính thức' },
+                { step: '03', title: 'Campaign', desc: 'Vận động tranh cử toàn quốc' },
+                { step: '04', title: 'Election Day', desc: 'Ngày bầu cử chính thức' },
+              ].map((process, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.15 }}
+                  className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-6 border border-gray-700 hover:border-purple-500 transition-all group"
+                >
+                  <div className="text-4xl font-black text-purple-500 mb-3 group-hover:scale-110 transition-transform">
+                    {process.step}
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-2">{process.title}</h3>
+                  <p className="text-gray-400">{process.desc}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.section>
+
+          {/* Bottom Summary */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-20 bg-gradient-to-r from-blue-600 via-purple-600 to-red-600 rounded-3xl p-12 text-center"
+          >
+            <h3 className="text-4xl font-black text-white mb-4">TÓM TẮT CHƯƠNG</h3>
+            <p className="text-xl text-white/90 leading-relaxed max-w-4xl mx-auto">
+              Hệ thống bầu cử Hoa Kỳ đặc trưng bởi chế độ hai đảng và cơ chế đại cử tri - 
+              một mô hình dân chủ đại diện phức tạp với lịch sử hơn 200 năm.
+            </p>
+          </motion.div>
+
+        </div>
       </div>
+
+      <style jsx global>{`
+        @keyframes twinkle {
+          0%, 100% { opacity: 0.3; }
+          50% { opacity: 1; }
+        }
+      `}</style>
     </div>
   );
 }

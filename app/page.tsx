@@ -20,67 +20,21 @@ export default function IntroPage() {
 
   return (
     <div className="min-h-screen relative overflow-hidden flex items-center justify-center">
-      {/* Animated Background */}
+      {/* Background Image */}
       <div className="fixed inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-950 via-amber-950 to-red-950" />
-        <motion.div
+        <div 
           className="absolute inset-0"
-          animate={{
-            backgroundPosition: ['0% 0%', '100% 100%'],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            repeatType: 'reverse',
-          }}
           style={{
-            backgroundImage: `radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.2) 0%, transparent 50%),
-                            radial-gradient(circle at 80% 80%, rgba(230, 57, 70, 0.2) 0%, transparent 50%),
-                            radial-gradient(circle at 40% 80%, rgba(212, 175, 55, 0.15) 0%, transparent 50%)`,
-            backgroundSize: '100% 100%',
+            backgroundImage: 'url(/background-trong-dong-png_095238288.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
+            backgroundRepeat: 'no-repeat',
           }}
         />
-        
-        {/* Floating particles */}
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-2 h-2 bg-gold/30 rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              y: [0, -30, 0],
-              opacity: [0.2, 0.5, 0.2],
-            }}
-            transition={{
-              duration: 3 + Math.random() * 2,
-              repeat: Infinity,
-              delay: Math.random() * 2,
-            }}
-          />
-        ))}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-        {/* Main Icon */}
-        <motion.div
-          initial={{ scale: 0, rotate: -180 }}
-          animate={{ scale: 1, rotate: 0 }}
-          transition={{ 
-            type: 'spring',
-            stiffness: 100,
-            damping: 15,
-            duration: 1.2 
-          }}
-          className="mb-12"
-        >
-          <div className="text-9xl md:text-[12rem] filter drop-shadow-2xl">
-            🏛️
-          </div>
-        </motion.div>
-
         {/* Title */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -169,8 +123,8 @@ export default function IntroPage() {
             <div className="text-xs text-white/70">Hệ thống</div>
           </div>
           <div className="bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20">
-            <div className="text-3xl font-bold text-gold">🗳️</div>
-            <div className="text-xs text-white/70">Bầu cử</div>
+            <div className="text-3xl font-bold text-gold">VN - US</div>
+            <div className="text-xs text-white/70">So sánh</div>
           </div>
         </motion.div>
       </div>
