@@ -4,122 +4,130 @@ import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import { useState, useEffect } from 'react';
 
-export default function IntroPage() {
+export default function IntroPageImpressive() {
   const router = useRouter();
   const [canEnter, setCanEnter] = useState(false);
 
   useEffect(() => {
-    // Enable enter button after 2 seconds
-    const timer = setTimeout(() => setCanEnter(true), 2000);
+    // Cho phép nút bấm hoạt động sau 1 giây khi hiệu ứng chữ chạy xong
+    const timer = setTimeout(() => setCanEnter(true), 1000);
     return () => clearTimeout(timer);
   }, []);
 
   const handleEnter = () => {
-    router.push('/mo-dau');
+    // Hiệu ứng exit: scale toàn màn hình lên trước khi chuyển trang
+    document.getElementById('main-container')?.classList.add('scale-[1.5]', 'opacity-0');
+    setTimeout(() => {
+      router.push('/mo-dau');
+    }, 800);
+  };
+
+  // Variant cho hiệu ứng chữ xuất hiện từng dòng
+  const textVariants = {
+    hidden: { y: 50, opacity: 0, skewY: 5 },
+    visible: { 
+      y: 0, 
+      opacity: 1, 
+      skewY: 0,
+      transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } // Easing mượt mà kiểu Apple
+    }
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden flex items-center justify-center">
-      {/* Background Image */}
-      <div className="fixed inset-0 -z-10 flex items-center justify-center">
-        <div
-          className="absolute"
-          style={{
-            width: '60vw',
-            height: '60vw',
-            maxWidth: '900px',
-            maxHeight: '900px',
-            minWidth: '320px',
-            minHeight: '320px',
-            left: '50%',
-            top: '50%',
-            transform: 'translate(-50%, -50%)',
-            backgroundImage: 'url(/background-trong-dong-png_095238288.png)',
-            backgroundSize: 'contain',
-            backgroundPosition: 'center center',
-            backgroundRepeat: 'no-repeat',
-            opacity: 0.85,
+    <div id="main-container" className="relative w-full h-screen overflow-hidden bg-slate-900 transition-all duration-800 ease-in-out">
+      
+      {/* 1. DYNAMIC BACKGROUND (Nền động rực rỡ) */}
+      <div className="absolute inset-0 z-0">
+        {/* Lớp Gradient chuyển màu chậm */}
+        <motion.div 
+          animate={{
+            backgroundPosition: ['0% 0%', '100% 100%'],
           }}
+          transition={{ duration: 20, repeat: Infinity, repeatType: "reverse", ease: "linear" }}
+          className="absolute inset-0 bg-gradient-to-br from-yellow-500 via-red-600 to-purple-900 bg-[length:400%_400%]"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
-      </div>
-
-      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-        {/* Title */}
-            <h1 className="text-7xl md:text-9xl font-bold mb-6 text-white leading-tight flex justify-center">
-              <span className="whitespace-nowrap">BẦU CỬ Ở VIỆT NAM</span>
-            </h1>
+        
+         {/* Họa tiết Trống Đồng Quay Chậm & Sáng */}
+         <div className="absolute inset-0 flex items-center justify-center">
             <motion.div
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{ duration: 0.8, delay: 1 }}
-              className="h-2 w-64 md:w-96 mx-auto bg-gradient-to-r from-transparent via-gold to-transparent mb-8"
+                animate={{ rotate: 360, scale: [1, 1.05, 1] }}
+                transition={{ 
+                  rotate: { duration: 60, repeat: Infinity, ease: "linear" },
+                  scale: { duration: 10, repeat: Infinity, ease: "easeInOut" }
+                }}
+                className="w-[110vh] h-[110vh] opacity-40 mix-blend-overlay blur-sm"
+                style={{
+                    backgroundImage: 'url(/background-trong-dong-png_095238288.png)', // Đảm bảo file ảnh có trong thư mục public
+                    backgroundSize: 'contain',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    filter: 'brightness(2.5) contrast(1.2)', // Làm cho họa tiết rực sáng lên
+                }}
             />
-            <h2 className="text-5xl md:text-7xl font-bold text-yellow-400 mb-12 whitespace-nowrap flex justify-center">
-              QUYỀN LÀM CHỦ CỦA NHÂN DÂN
-            </h2>
-
-        {/* Enter Buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: canEnter ? 1 : 0.3, y: 0 }}
-          transition={{ duration: 0.8, delay: 2 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-6"
-        >
-          <motion.button
-            onClick={handleEnter}
-            disabled={!canEnter}
-            whileHover={canEnter ? { scale: 1.1, boxShadow: '0 25px 50px -12px rgba(212, 175, 55, 0.5)' } : {}}
-            whileTap={canEnter ? { scale: 0.95 } : {}}
-            className={`px-12 py-6 bg-gradient-to-r from-red-600 to-yellow-600 text-white text-xl font-bold rounded-2xl shadow-2xl transition-all duration-300 ${canEnter ? 'cursor-pointer' : 'cursor-not-allowed opacity-50'
-              }`}
-          >
-            VÀO TRANG WEB
-          </motion.button>
-        </motion.div>
-
-
-        {/* Stats Preview */}
-            {/* Scroll hint (alternative way to enter) */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: canEnter ? 1 : 0 }}
-              transition={{ delay: 2.5, duration: 1 }}
-              className="mt-20"
-            >
-              <motion.div
-                animate={{ y: [0, 15, 0] }}
-                transition={{ repeat: Infinity, duration: 2 }}
-                className="flex flex-col items-center text-white/60 cursor-pointer"
-                onClick={handleEnter}
-              >
-                <span className="text-sm mb-2 font-semibold">Hoặc lướt xuống</span>
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-              </motion.div>
-            </motion.div>
+         </div>
+         {/* Lớp phủ làm tối nhẹ các góc để tập trung vào trung tâm */}
+         <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/40"></div>
       </div>
-            {/* Stats Preview */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 2.2 }}
-              className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full max-w-2xl flex justify-center gap-4"
+
+
+      {/* 2. MAIN CONTENT (Nội dung chính) */}
+      <div className="absolute inset-0 z-20 flex flex-col items-center justify-center">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          transition={{ staggerChildren: 0.2 }}
+          className="relative text-center w-full px-4 md:px-0" // Thêm padding ngang
+        >
+            {/* --- TYPOGRAPHY HIỆU ỨNG CAO CẤP --- */}
+            {/* Sử dụng mix-blend-difference để chữ tương phản mạnh với nền động */}
+            <div className="relative mix-blend-difference text-white select-none pointer-events-none flex flex-col items-center"> 
+                <motion.h3 variants={textVariants} className="text-lg md:text-2xl lg:text-3xl tracking-[0.5em] md:tracking-[0.8em] font-light mb-2 md:mb-4 uppercase text-yellow-200 text-center">
+                    Việt Nam Dân Chủ Cộng Hòa
+                </motion.h3>
+                
+                {/* Thay đổi ở đây: Dùng text-[15vw] để chữ tự co giãn theo chiều ngang */}
+                <motion.h1 
+                    variants={textVariants} 
+                    className="text-[15vw] md:text-[12rem] font-black leading-[1.2] tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-yellow-200 to-white/50 drop-shadow-2xl text-center w-full"
+                >
+                    BẦU CỬ
+                </motion.h1>
+                
+                {/* Dòng kẻ ngang chạy ra */}
+                <motion.div 
+                  initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ delay: 0.8, duration: 1, ease: "circOut" }}
+                  className="h-1 w-3/4 max-w-2xl mx-auto bg-gradient-to-r from-transparent via-yellow-400 to-transparent mt-4 md:mt-6 mb-4 md:mb-8"
+                ></motion.div>
+                
+                <motion.h2 variants={textVariants} className="text-xl md:text-4xl lg:text-6xl font-bold tracking-widest uppercase text-white/90 text-center">
+                    Quyền Làm Chủ Nhân Dân
+                </motion.h2>
+            </div>
+            {/* ----------------------------------- */}
+
+            {/* Nút bấm hiện đại */}
+            <motion.div 
+                className="mt-12 md:mt-20"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: canEnter ? 1 : 0, y: canEnter ? 0 : 30 }}
+                transition={{ duration: 0.5 }}
             >
-              <div className="bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20">
-                <div className="text-3xl font-bold text-gold">5</div>
-                <div className="text-xs text-white/70">Phần chính</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20">
-                <div className="text-3xl font-bold text-gold">2</div>
-                <div className="text-xs text-white/70">Hệ thống</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-md px-6 py-3 rounded-xl border border-white/20">
-                <div className="text-3xl font-bold text-gold">VN - US</div>
-                <div className="text-xs text-white/70">So sánh</div>
-              </div>
+                <button
+                    onClick={handleEnter}
+                    disabled={!canEnter}
+                    className="group relative px-8 md:px-12 py-4 md:py-6 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold text-lg md:text-xl rounded-full overflow-hidden transition-all hover:bg-white/20 hover:scale-105 hover:shadow-[0_0_50px_rgba(255,215,0,0.4)] active:scale-95"
+                >
+                    <span className="relative z-10 flex items-center gap-3 tracking-wider">
+                        BẮT ĐẦU HÀNH TRÌNH
+                        <motion.span animate={{ x: [0, 5, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>→</motion.span>
+                    </span>
+                    {/* Hiệu ứng ánh sáng quét qua nút */}
+                    <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-40 group-hover:animate-shine" />
+                </button>
             </motion.div>
+        </motion.div>
+      </div>
+      
     </div>
   );
 }

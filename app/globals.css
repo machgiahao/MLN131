@@ -64,3 +64,18 @@ a {
   background-image:
     repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(212, 175, 55, 0.02) 2px, rgba(212, 175, 55, 0.02) 4px);
 }
+
+/* Hiệu ứng ánh sáng quét qua nút */
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+.animate-shine {
+    animation: shine 0.7s;
+}
+
+/* Hỗ trợ radial gradient */
+.bg-radial-gradient {
+  background-image: radial-gradient(var(--tw-gradient-stops));
+}
