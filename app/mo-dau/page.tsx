@@ -22,10 +22,6 @@ export default function MoDauPage() {
             01
           </div>
           <div className="relative z-10">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="h-1 w-20 bg-blue-600" />
-              <span className="text-sm font-bold tracking-widest text-blue-600">CHƯƠNG MỘT</span>
-            </div>
             <h1 className="text-7xl md:text-9xl  font-bold text-gray-900 mb-6 leading-none">
               MỞ ĐẦU
             </h1>

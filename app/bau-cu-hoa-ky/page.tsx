@@ -33,14 +33,6 @@ export default function BauCuHoaKyPage() {
         </div>
 
         <div className="relative z-10 text-center px-6">
-          <motion.div
-            initial={{ y: 30, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3 }}
-            className="inline-block bg-white/20 backdrop-blur-sm text-white px-6 py-2 rounded-full font-bold mb-8 border border-white/30"
-          >
-            CHAPTER 03
-          </motion.div>
           <motion.h1
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}

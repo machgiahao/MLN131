@@ -18,9 +18,6 @@ export default function BauCuVietNamPage() {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <div className="inline-block bg-gradient-to-r from-red-600 to-yellow-600 text-white px-8 py-3 rounded-full font-bold mb-6">
-            CHƯƠNG 02
-          </div>
           <h1 className="text-6xl md:text-8xl  font-bold bg-gradient-to-r from-red-700 via-yellow-600 to-red-700 bg-clip-text text-transparent mb-6">
             BẦU CỬ VIỆT NAM
           </h1>
@@ -68,69 +65,6 @@ export default function BauCuVietNamPage() {
             </button>
           </div>
         </motion.section>
-
-        {/* Timeline Process - Vertical Flow */}
-        <div className="relative">
-          {/* Vertical Line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-red-600 via-yellow-600 to-red-600" />
-
-          {/* Steps */}
-          {[
-            {
-              number: '01',
-              title: 'Chuẩn bị',
-              desc: 'Lập danh sách cử tri và khu vực bỏ phiếu',
-              color: 'red'
-            },
-            {
-              number: '02',
-              title: 'Ứng cử',
-              desc: 'Đề cử, tiếp xúc cử tri, vận động bầu cử',
-              color: 'yellow'
-            },
-            {
-              number: '03',
-              title: 'Bỏ phiếu',
-              desc: 'Ngày bầu cử chính thức, bỏ phiếu kín',
-              color: 'red'
-            },
-            {
-              number: '04',
-              title: 'Kiểm phiếu',
-              desc: 'Công khai, minh bạch, dân chủ',
-              color: 'yellow'
-            },
-            {
-              number: '05',
-              title: 'Công bố',
-              desc: 'Công bố kết quả, xác nhận tư cách',
-              color: 'red'
-            }
-          ].map((step, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className={`relative mb-12 ${index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'} md:w-1/2 pl-20 md:pl-0`}
-            >
-              {/* Circle on line */}
-              <div className={`absolute left-4 md:left-auto ${index % 2 === 0 ? 'md:-right-6' : 'md:-left-6'} top-0 w-12 h-12 rounded-full bg-gradient-to-br ${step.color === 'red' ? 'from-red-600 to-red-700' : 'from-yellow-500 to-yellow-600'} flex items-center justify-center text-white font-bold border-4 border-white shadow-lg`}>
-                {index + 1}
-              </div>
-
-              {/* Content Card */}
-              <div className="bg-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-shadow">
-                <div className={`text-5xl font-bold ${step.color === 'red' ? 'text-red-600' : 'text-yellow-600'} mb-3`}>
-                  {step.number}
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{step.title}</h3>
-                <p className="text-gray-600">{step.desc}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
 
         {/* Stats Grid */}
         <motion.section

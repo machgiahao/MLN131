@@ -16,7 +16,6 @@ export default function SoSanhPage() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <div className="text-8xl mb-6">⚖️</div>
           <h1 className="text-6xl md:text-7xl  font-bold text-warm-gray mb-6">
             SO SÁNH
           </h1>

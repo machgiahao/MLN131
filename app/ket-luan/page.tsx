@@ -18,7 +18,6 @@ export default function KetLuanPage() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <div className="text-8xl mb-6">🎯</div>
           <h1 className="text-6xl md:text-7xl  font-bold text-warm-gray mb-6">
             KẾT LUẬN
           </h1>
@@ -39,7 +38,6 @@ export default function KetLuanPage() {
           >
             <section className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-green-200/50">
               <h2 className="text-3xl  font-bold text-warm-gray mb-4 flex items-center gap-3">
-                <span className="text-4xl">📝</span>
                 Tổng kết chính
               </h2>
               <p className="text-lg text-warm-gray/80 leading-relaxed mb-6">
@@ -88,7 +86,6 @@ export default function KetLuanPage() {
 
             <section className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-green-200/50">
               <h2 className="text-3xl  font-bold text-warm-gray mb-4 flex items-center gap-3">
-                <span className="text-4xl">🚀</span>
                 Triển vọng tương lai
               </h2>
               <div className="space-y-3">
@@ -115,7 +112,6 @@ export default function KetLuanPage() {
 
             <section className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 backdrop-blur-sm rounded-2xl p-8 shadow-lg border-2 border-gold/30">
               <h2 className="text-3xl  font-bold text-warm-gray mb-4 flex items-center gap-3">
-                <span className="text-4xl">💪</span>
                 Lời kêu gọi hành động
               </h2>
               <div className="space-y-4">
