@@ -6,7 +6,7 @@ export default function Tab2VietnamElection() {
     <div>
       <ContentSection title="Hệ Thống Chính Trị Việt Nam">
         <p className="text-lg">
-          Việt Nam là quốc gia <strong>xã hội chủ nghĩa</strong>, do <strong>Đảng Cộng sản Việt Nam</strong> lãnh đạo. 
+          Việt Nam là quốc gia <strong>xã hội chủ nghĩa</strong>, do <strong>Đảng Cộng sản Việt Nam</strong> lãnh đạo.
           Đây là chế độ một đảng lãnh đạo, trong đó Đảng đóng vai trò là lực lượng lãnh đạo Nhà nước và xã hội.
         </p>
       </ContentSection>
@@ -14,11 +14,11 @@ export default function Tab2VietnamElection() {
       <ContentSection title="Công Dân Bầu Cử Ai?">
         <div className="bg-deep-red/40 p-6 rounded-lg space-y-4">
           <div>
-            <h4 className="font-serif font-bold text-xl text-warm-yellow mb-2">
+            <h4 className=" font-bold text-xl text-warm-yellow mb-2">
               🏛️ Quốc Hội (National Assembly)
             </h4>
             <p>
-              Cơ quan quyền lực nhà nước cao nhất, đại diện cho ý chí và nguyện vọng của nhân dân. 
+              Cơ quan quyền lực nhà nước cao nhất, đại diện cho ý chí và nguyện vọng của nhân dân.
               Nhiệm kỳ <strong>5 năm</strong>.
             </p>
             <ul className="list-disc list-inside mt-2 ml-4 space-y-1">
@@ -29,11 +29,11 @@ export default function Tab2VietnamElection() {
           </div>
 
           <div>
-            <h4 className="font-serif font-bold text-xl text-warm-yellow mb-2">
+            <h4 className=" font-bold text-xl text-warm-yellow mb-2">
               🏘️ Hội Đồng Nhân Dân (People's Council)
             </h4>
             <p>
-              Cơ quan quyền lực nhà nước ở địa phương (tỉnh, thành phố, quận, huyện, xã, phường). 
+              Cơ quan quyền lực nhà nước ở địa phương (tỉnh, thành phố, quận, huyện, xã, phường).
               Nhiệm kỳ <strong>5 năm</strong>.
             </p>
             <ul className="list-disc list-inside mt-2 ml-4 space-y-1">
@@ -77,28 +77,28 @@ export default function Tab2VietnamElection() {
       <ContentSection title="Nguyên Tắc Bầu Cử Ở Việt Nam">
         <div className="grid md:grid-cols-2 gap-4">
           <div className="bg-deep-red/40 p-5 rounded-lg border-l-4 border-warm-yellow">
-            <h4 className="font-serif font-bold text-lg text-warm-yellow mb-2">
+            <h4 className=" font-bold text-lg text-warm-yellow mb-2">
               🌍 Phổ Thông (Universal)
             </h4>
             <p>Mọi công dân từ đủ 18 tuổi trở lên đều có quyền bầu cử</p>
           </div>
 
           <div className="bg-deep-red/40 p-5 rounded-lg border-l-4 border-warm-yellow">
-            <h4 className="font-serif font-bold text-lg text-warm-yellow mb-2">
+            <h4 className=" font-bold text-lg text-warm-yellow mb-2">
               ⚖️ Bình Đẳng (Equal)
             </h4>
             <p>Mỗi cử tri có một phiếu bầu, mọi phiếu có giá trị ngang nhau</p>
           </div>
 
           <div className="bg-deep-red/40 p-5 rounded-lg border-l-4 border-warm-yellow">
-            <h4 className="font-serif font-bold text-lg text-warm-yellow mb-2">
+            <h4 className=" font-bold text-lg text-warm-yellow mb-2">
               👤 Trực Tiếp (Direct)
             </h4>
             <p>Cử tri trực tiếp bầu đại biểu, không thông qua trung gian</p>
           </div>
 
           <div className="bg-deep-red/40 p-5 rounded-lg border-l-4 border-warm-yellow">
-            <h4 className="font-serif font-bold text-lg text-warm-yellow mb-2">
+            <h4 className=" font-bold text-lg text-warm-yellow mb-2">
               🔒 Bỏ Phiếu Kín (Secret Ballot)
             </h4>
             <p>Việc bỏ phiếu được thực hiện trong phòng kín, đảm bảo bí mật</p>
@@ -109,14 +109,14 @@ export default function Tab2VietnamElection() {
       <ContentSection title="Chu Kỳ Bầu Cử">
         <div className="bg-academic-red/30 p-6 rounded-lg">
           <p className="text-lg">
-            📅 Bầu cử Quốc hội và Hội đồng nhân dân các cấp diễn ra <strong>5 năm một lần</strong>. 
+            📅 Bầu cử Quốc hội và Hội đồng nhân dân các cấp diễn ra <strong>5 năm một lần</strong>.
             Đây là dịp để nhân dân thực hiện quyền làm chủ, lựa chọn người đại diện xứng đáng.
           </p>
         </div>
       </ContentSection>
 
-      <VideoSection 
-        title="Xem video về bầu cử Quốc hội Việt Nam" 
+      <VideoSection
+        title="Xem video về bầu cử Quốc hội Việt Nam"
         duration="1-2 phút"
         videoUrl="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
       />

@@ -22,7 +22,7 @@ export default function IntroPage() {
     <div className="min-h-screen relative overflow-hidden flex items-center justify-center">
       {/* Background Image */}
       <div className="fixed inset-0 -z-10">
-        <div 
+        <div
           className="absolute inset-0"
           style={{
             backgroundImage: 'url(/background-trong-dong-png_095238288.png)',
@@ -41,7 +41,7 @@ export default function IntroPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          <h1 className="text-7xl md:text-9xl font-serif font-bold mb-6 text-white leading-tight">
+          <h1 className="text-7xl md:text-9xl  font-bold mb-6 text-white leading-tight">
             QUYỀN LÀM CHỦ
           </h1>
           <motion.div
@@ -50,7 +50,7 @@ export default function IntroPage() {
             transition={{ duration: 0.8, delay: 1 }}
             className="h-2 w-64 md:w-96 mx-auto bg-gradient-to-r from-transparent via-gold to-transparent mb-8"
           />
-          <h2 className="text-5xl md:text-7xl font-serif font-bold text-gold mb-12">
+          <h2 className="text-5xl md:text-7xl  font-bold text-gold mb-12">
             CỦA NHÂN DÂN
           </h2>
         </motion.div>
@@ -60,7 +60,7 @@ export default function IntroPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.5 }}
-          className="text-2xl md:text-3xl text-white/90 max-w-4xl mx-auto leading-relaxed font-serif italic mb-16"
+          className="text-2xl md:text-3xl text-white/90 max-w-4xl mx-auto leading-relaxed  italic mb-16"
         >
           "Dân là gốc của nước, gốc vững thì nước bền"
           <br />
@@ -79,9 +79,8 @@ export default function IntroPage() {
             disabled={!canEnter}
             whileHover={canEnter ? { scale: 1.1, boxShadow: '0 25px 50px -12px rgba(212, 175, 55, 0.5)' } : {}}
             whileTap={canEnter ? { scale: 0.95 } : {}}
-            className={`px-12 py-6 bg-gradient-to-r from-red-600 to-yellow-600 text-white text-xl font-bold rounded-2xl shadow-2xl transition-all duration-300 ${
-              canEnter ? 'cursor-pointer' : 'cursor-not-allowed opacity-50'
-            }`}
+            className={`px-12 py-6 bg-gradient-to-r from-red-600 to-yellow-600 text-white text-xl font-bold rounded-2xl shadow-2xl transition-all duration-300 ${canEnter ? 'cursor-pointer' : 'cursor-not-allowed opacity-50'
+              }`}
           >
             VÀO TRANG WEB
           </motion.button>

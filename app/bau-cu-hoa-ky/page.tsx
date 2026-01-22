@@ -9,7 +9,7 @@ export default function BauCuHoaKyPage() {
   return (
     <div className="min-h-screen bg-gray-950">
       {/* LAYOUT 3: Split-Screen / Cards Grid - American Style */}
-      
+
       {/* Hero Section - Full Width */}
       <motion.section
         initial={{ opacity: 0 }}
@@ -60,7 +60,7 @@ export default function BauCuHoaKyPage() {
           >
             Hệ thống bầu cử hai đảng và cơ chế đại cử tri
           </motion.p>
-          
+
           {/* Scroll indicator */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -76,7 +76,7 @@ export default function BauCuHoaKyPage() {
       {/* Main Content - Dark Mode with Cards */}
       <div className="bg-gray-950 py-20">
         <div className="max-w-7xl mx-auto px-6">
-          
+
           {/* Video Section - Cinematic */}
           <motion.section
             initial={{ opacity: 0, y: 50 }}
@@ -91,13 +91,13 @@ export default function BauCuHoaKyPage() {
                     <iframe
                       width="100%"
                       height="100%"
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      src="https://drive.google.com/file/d/10erMZ_5fmDWeZLPVHUtgsSBFkWD1nJtg/preview"
                       frameBorder="0"
                       allowFullScreen
                     />
                   </div>
                 ) : (
-                  <div 
+                  <div
                     onClick={() => setShowVideo(true)}
                     className="aspect-video rounded-xl bg-gradient-to-br from-blue-600 via-purple-600 to-red-600 flex items-center justify-center cursor-pointer hover:scale-[1.01] transition-transform group"
                   >
@@ -182,7 +182,7 @@ export default function BauCuHoaKyPage() {
             <h2 className="text-5xl font-black text-white text-center mb-12">
               HỆ THỐNG ĐẠI CỬ TRI
             </h2>
-            
+
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 { number: '538', label: 'Tổng đại cử tri', desc: 'Electoral votes' },
@@ -216,7 +216,7 @@ export default function BauCuHoaKyPage() {
             <h2 className="text-5xl font-black text-white text-center mb-12">
               QUY TRÌNH BẦU CỬ
             </h2>
-            
+
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 { step: '01', title: 'Primaries', desc: 'Bầu chọn ứng viên trong đảng' },
@@ -251,7 +251,7 @@ export default function BauCuHoaKyPage() {
           >
             <h3 className="text-4xl font-black text-white mb-4">TÓM TẮT CHƯƠNG</h3>
             <p className="text-xl text-white/90 leading-relaxed max-w-4xl mx-auto">
-              Hệ thống bầu cử Hoa Kỳ đặc trưng bởi chế độ hai đảng và cơ chế đại cử tri - 
+              Hệ thống bầu cử Hoa Kỳ đặc trưng bởi chế độ hai đảng và cơ chế đại cử tri -
               một mô hình dân chủ đại diện phức tạp với lịch sử hơn 200 năm.
             </p>
           </motion.div>

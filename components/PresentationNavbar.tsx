@@ -19,11 +19,11 @@ export default function PresentationNavbar() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-lg font-serif font-bold text-vn-red">
+            <h1 className="text-lg  font-bold text-vn-red">
               Quyền Làm Chủ Của Nhân Dân
             </h1>
           </div>
-          
+
           <div className="flex space-x-1">
             {navItems.map((item) => {
               const isActive = pathname === item.href;
@@ -33,8 +33,8 @@ export default function PresentationNavbar() {
                   href={item.href}
                   className={`
                     px-4 py-2 rounded-md text-sm font-medium transition-all
-                    ${isActive 
-                      ? 'bg-vn-red text-white shadow-md' 
+                    ${isActive
+                      ? 'bg-vn-red text-white shadow-md'
                       : 'text-vn-dark hover:bg-vn-bronze/10 hover:text-vn-red'
                     }
                   `}

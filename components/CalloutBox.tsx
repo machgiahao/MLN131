@@ -51,7 +51,7 @@ export default function CalloutBox({ type = 'info', title, children }: CalloutBo
         </div>
         <div className="flex-1">
           {title && (
-            <h4 className="text-xl font-serif font-bold text-warm-gray mb-3">
+            <h4 className="text-xl  font-bold text-warm-gray mb-3">
               {title}
             </h4>
           )}

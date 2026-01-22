@@ -16,7 +16,7 @@ export default function ModernNavbar() {
   const pathname = usePathname();
 
   return (
-    <motion.nav 
+    <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gold/20 shadow-lg"
@@ -26,15 +26,15 @@ export default function ModernNavbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="hidden lg:block">
-              <span className="font-serif font-bold text-2xl text-warm-gray block leading-tight">
+              <span className=" font-bold text-2xl text-warm-gray block leading-tight">
                 Quyền Làm Chủ Của Nhân Dân
               </span>
             </div>
-            <span className="lg:hidden font-serif font-bold text-xl text-warm-gray">
+            <span className="lg:hidden  font-bold text-xl text-warm-gray">
               QLCND
             </span>
           </Link>
-          
+
           {/* Navigation Items */}
           <div className="flex space-x-1">
             {navItems.map((item) => {
@@ -45,9 +45,8 @@ export default function ModernNavbar() {
                   href={item.href}
                   className="relative px-4 py-2 rounded-xl text-sm font-bold transition-all group"
                 >
-                  <span className={`relative z-10 ${
-                    isActive ? 'text-white' : 'text-warm-gray group-hover:text-red-600'
-                  }`}>
+                  <span className={`relative z-10 ${isActive ? 'text-white' : 'text-warm-gray group-hover:text-red-600'
+                    }`}>
                     {item.label}
                   </span>
                   {isActive && (

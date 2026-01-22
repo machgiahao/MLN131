@@ -17,7 +17,7 @@ export default function SoSanhPage() {
           className="text-center mb-16"
         >
           <div className="text-8xl mb-6">⚖️</div>
-          <h1 className="text-6xl md:text-7xl font-serif font-bold text-warm-gray mb-6">
+          <h1 className="text-6xl md:text-7xl  font-bold text-warm-gray mb-6">
             SO SÁNH
           </h1>
           <div className="h-1 w-32 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto mb-8" />
@@ -111,7 +111,7 @@ export default function SoSanhPage() {
             className="space-y-8"
           >
             <section className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-purple-200/50">
-              <h2 className="text-3xl font-serif font-bold text-warm-gray mb-4 flex items-center gap-3">
+              <h2 className="text-3xl  font-bold text-warm-gray mb-4 flex items-center gap-3">
                 <span className="text-4xl">🤝</span>
                 Điểm giống nhau
               </h2>
@@ -139,7 +139,7 @@ export default function SoSanhPage() {
             </section>
 
             <section className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-purple-200/50">
-              <h2 className="text-3xl font-serif font-bold text-warm-gray mb-4 flex items-center gap-3">
+              <h2 className="text-3xl  font-bold text-warm-gray mb-4 flex items-center gap-3">
                 <span className="text-4xl">🔄</span>
                 Điểm khác nhau
               </h2>
@@ -199,11 +199,11 @@ export default function SoSanhPage() {
           >
             {/* Video Section */}
             <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-purple-300/50">
-              <h3 className="text-2xl font-serif font-bold text-warm-gray mb-6 flex items-center gap-3">
+              <h3 className="text-2xl  font-bold text-warm-gray mb-6 flex items-center gap-3">
                 <span className="text-3xl">🎬</span>
                 Video phân tích
               </h3>
-              
+
               {showVideo ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -213,7 +213,7 @@ export default function SoSanhPage() {
                   <iframe
                     width="100%"
                     height="100%"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    src="https://drive.google.com/file/d/1JZX74AXhbxtOqJBPmzGjMvoz4ENPfUvC/preview"
                     title="So sánh bầu cử"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -245,7 +245,7 @@ export default function SoSanhPage() {
 
             {/* Insights */}
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-purple-200/50">
-              <h3 className="text-2xl font-serif font-bold text-warm-gray mb-6 flex items-center gap-3">
+              <h3 className="text-2xl  font-bold text-warm-gray mb-6 flex items-center gap-3">
                 <span className="text-3xl">💡</span>
                 Nhận xét quan trọng
               </h3>
@@ -253,7 +253,7 @@ export default function SoSanhPage() {
                 <div className="bg-purple-50 rounded-xl p-5 border-l-4 border-purple-500">
                   <h4 className="font-bold text-purple-900 mb-2">🎯 Mục tiêu chung</h4>
                   <p className="text-warm-gray/80">
-                    Cả hai hệ thống đều hướng đến việc đảm bảo quyền dân chủ của công dân 
+                    Cả hai hệ thống đều hướng đến việc đảm bảo quyền dân chủ của công dân
                     và xây dựng chính quyền có nguồn gốc từ nhân dân.
                   </p>
                 </div>
@@ -261,7 +261,7 @@ export default function SoSanhPage() {
                 <div className="bg-pink-50 rounded-xl p-5 border-l-4 border-pink-500">
                   <h4 className="font-bold text-pink-900 mb-2">🔍 Khác biệt cơ bản</h4>
                   <p className="text-warm-gray/80">
-                    Việt Nam theo chế độ xã hội chủ nghĩa, Hoa Kỳ theo chế độ tư bản chủ nghĩa, 
+                    Việt Nam theo chế độ xã hội chủ nghĩa, Hoa Kỳ theo chế độ tư bản chủ nghĩa,
                     dẫn đến sự khác biệt về cơ chế và phương thức tổ chức.
                   </p>
                 </div>
@@ -269,7 +269,7 @@ export default function SoSanhPage() {
                 <div className="bg-blue-50 rounded-xl p-5 border-l-4 border-blue-500">
                   <h4 className="font-bold text-blue-900 mb-2">🌟 Học hỏi lẫn nhau</h4>
                   <p className="text-warm-gray/80">
-                    Mỗi hệ thống có những ưu điểm riêng, có thể học hỏi và tham khảo 
+                    Mỗi hệ thống có những ưu điểm riêng, có thể học hỏi và tham khảo
                     để hoàn thiện quy trình dân chủ.
                   </p>
                 </div>
@@ -278,7 +278,7 @@ export default function SoSanhPage() {
 
             {/* Statistics */}
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-purple-200/50">
-              <h3 className="text-2xl font-serif font-bold text-warm-gray mb-6 flex items-center gap-3">
+              <h3 className="text-2xl  font-bold text-warm-gray mb-6 flex items-center gap-3">
                 <span className="text-3xl">📊</span>
                 So sánh nhanh
               </h3>
@@ -313,12 +313,12 @@ export default function SoSanhPage() {
           transition={{ delay: 0.7 }}
           className="bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-2xl p-10 shadow-2xl text-center"
         >
-          <h3 className="text-3xl font-serif font-bold mb-4">
+          <h3 className="text-3xl  font-bold mb-4">
             Tóm tắt chương
           </h3>
           <p className="text-xl leading-relaxed max-w-4xl mx-auto">
-            Việt Nam và Hoa Kỳ đều có hệ thống bầu cử dân chủ nhưng khác nhau về cơ chế, 
-            phương thức tổ chức và bối cảnh chính trị - xã hội. Sự khác biệt này xuất phát từ 
+            Việt Nam và Hoa Kỳ đều có hệ thống bầu cử dân chủ nhưng khác nhau về cơ chế,
+            phương thức tổ chức và bối cảnh chính trị - xã hội. Sự khác biệt này xuất phát từ
             lịch sử, văn hóa và chế độ chính trị của mỗi quốc gia.
           </p>
         </motion.div>

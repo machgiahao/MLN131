@@ -15,7 +15,7 @@ export default function ThucHanhPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-20"
         >
-          <h1 className="text-5xl md:text-6xl font-serif font-bold text-warm-gray mb-6">
+          <h1 className="text-5xl md:text-6xl  font-bold text-warm-gray mb-6">
             Thực Hành Dân Chủ Tại Việt Nam
           </h1>
           <p className="text-2xl text-warm-gray/70 max-w-3xl mx-auto">
@@ -57,7 +57,7 @@ export default function ThucHanhPage() {
           </div>
         </CalloutBox>
 
-        <VideoPlayer 
+        <VideoPlayer
           videoUrl="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
           title="Xem video về bầu cử Quốc hội Việt Nam"
         />

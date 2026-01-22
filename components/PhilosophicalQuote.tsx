@@ -25,11 +25,11 @@ export default function PhilosophicalQuote({ quote, author, context }: Philosoph
       <div className="absolute inset-0 bg-gradient-to-r from-gold/10 via-soft-red/10 to-gold/10 blur-2xl" />
       <div className="relative bg-white/60 backdrop-blur-sm rounded-3xl p-12 border-2 border-gold/30 shadow-2xl">
         <div className="absolute -top-6 left-12 text-6xl text-gold/40">❝</div>
-        <blockquote className="text-2xl md:text-3xl font-serif italic text-center text-warm-gray leading-relaxed px-8">
+        <blockquote className="text-2xl md:text-3xl  italic text-center text-warm-gray leading-relaxed px-8">
           {quote}
         </blockquote>
         <div className="absolute -bottom-6 right-12 text-6xl text-gold/40 rotate-180">❝</div>
-        
+
         {author && (
           <div className="text-center mt-8 pt-6 border-t border-gold/20">
             <p className="text-lg font-medium text-soft-red">— {author}</p>

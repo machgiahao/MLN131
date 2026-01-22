@@ -10,21 +10,21 @@ export default function ThucTienVietNamPage() {
     <PageTransition>
       <div className="min-h-screen pattern-bg">
         <div className="max-w-5xl mx-auto px-6 py-16">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-vn-red mb-12 text-center">
+          <h1 className="text-4xl md:text-5xl  font-bold text-vn-red mb-12 text-center">
             Thực Tiễn Việt Nam
           </h1>
 
           <PresentationSection title="Hệ Thống Bầu Cử Việt Nam">
             <KeyStatement>
-              Việt Nam thực hiện chế độ dân chủ xã hội chủ nghĩa, 
+              Việt Nam thực hiện chế độ dân chủ xã hội chủ nghĩa,
               nhân dân trực tiếp bầu đại biểu Quốc hội và Hội đồng nhân dân các cấp.
             </KeyStatement>
 
             <div className="bg-white rounded-lg shadow-sm p-8">
-              <h3 className="text-2xl font-serif font-bold text-vn-red mb-6">
+              <h3 className="text-2xl  font-bold text-vn-red mb-6">
                 Đối Tượng Bầu Cử
               </h3>
-              
+
               <div className="space-y-6">
                 <div className="border-l-4 border-vn-red pl-6">
                   <h4 className="text-xl font-bold text-vn-red mb-3">🏛️ Quốc Hội</h4>
@@ -53,7 +53,7 @@ export default function ThucTienVietNamPage() {
             </div>
 
             <div className="mt-8">
-              <VideoButton 
+              <VideoButton
                 videoUrl="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
                 title="Xem video về bầu cử Quốc hội Việt Nam"
               />
@@ -120,12 +120,12 @@ export default function ThucTienVietNamPage() {
             </div>
           </PresentationSection>
 
-          <QuoteBox 
+          <QuoteBox
             text="Không có mô hình tốt nhất – chỉ có mô hình phù hợp nhất với đặc điểm lịch sử, văn hóa và hoàn cảnh của mỗi quốc gia"
           />
 
           <div className="bg-gradient-to-r from-vn-red/5 to-vn-bronze/5 rounded-lg p-8 border-l-4 border-vn-red">
-            <h3 className="text-2xl font-serif font-bold text-vn-red mb-4">
+            <h3 className="text-2xl  font-bold text-vn-red mb-4">
               Tại Sao Việt Nam Chọn Mô Hình Này?
             </h3>
             <BulletList items={[

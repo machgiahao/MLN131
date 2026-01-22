@@ -10,7 +10,7 @@ export default function BauCuVietNamPage() {
     <div className="min-h-screen py-20 bg-gradient-to-br from-red-50 via-yellow-50 to-red-50">
       <div className="max-w-6xl mx-auto px-6">
         {/* LAYOUT 2: Timeline/Process Flow - Vertical */}
-        
+
         {/* Header với flag pattern */}
         <motion.header
           initial={{ opacity: 0, scale: 0.9 }}
@@ -21,7 +21,7 @@ export default function BauCuVietNamPage() {
           <div className="inline-block bg-gradient-to-r from-red-600 to-yellow-600 text-white px-8 py-3 rounded-full font-bold mb-6">
             CHƯƠNG 02
           </div>
-          <h1 className="text-6xl md:text-8xl font-serif font-bold bg-gradient-to-r from-red-700 via-yellow-600 to-red-700 bg-clip-text text-transparent mb-6">
+          <h1 className="text-6xl md:text-8xl  font-bold bg-gradient-to-r from-red-700 via-yellow-600 to-red-700 bg-clip-text text-transparent mb-6">
             BẦU CỬ VIỆT NAM
           </h1>
           <div className="max-w-3xl mx-auto">
@@ -44,13 +44,13 @@ export default function BauCuVietNamPage() {
                 <iframe
                   width="100%"
                   height="100%"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  src="https://drive.google.com/file/d/1Z3YMmtuvy61urVDVITGimmnf1FIkk_2Z/preview"
                   frameBorder="0"
                   allowFullScreen
                 />
               </div>
             ) : (
-              <div 
+              <div
                 onClick={() => setShowVideo(true)}
                 className="aspect-video rounded-2xl bg-gradient-to-br from-red-600 via-yellow-600 to-red-600 flex items-center justify-center cursor-pointer hover:scale-[1.02] transition-transform"
               >
@@ -176,7 +176,7 @@ export default function BauCuVietNamPage() {
         >
           <h3 className="text-4xl font-bold mb-4">Tóm tắt chương</h3>
           <p className="text-xl leading-relaxed max-w-4xl mx-auto">
-            Bầu cử tại Việt Nam được tổ chức theo nguyên tắc phổ thông, bình đẳng, trực tiếp 
+            Bầu cử tại Việt Nam được tổ chức theo nguyên tắc phổ thông, bình đẳng, trực tiếp
             và bỏ phiếu kín - cơ chế quan trọng để nhân dân thực hiện quyền làm chủ.
           </p>
         </motion.div>

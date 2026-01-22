@@ -35,9 +35,8 @@ export default function Timeline({ events }: TimelineProps) {
             initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
-            className={`relative flex items-center ${
-              index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-            }`}
+            className={`relative flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+              }`}
           >
             <div className={`w-5/12 ${index % 2 === 0 ? 'text-right pr-12' : 'text-left pl-12'}`}>
               {event.year && (
@@ -45,7 +44,7 @@ export default function Timeline({ events }: TimelineProps) {
                   {event.year}
                 </div>
               )}
-              <h4 className="text-lg font-serif font-bold text-warm-gray mb-2">
+              <h4 className="text-lg  font-bold text-warm-gray mb-2">
                 {event.title}
               </h4>
               <p className="text-warm-gray/70 leading-relaxed text-sm">

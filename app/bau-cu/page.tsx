@@ -39,7 +39,7 @@ export default function BauCuPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-20"
         >
-          <h1 className="text-5xl md:text-6xl font-serif font-bold text-warm-gray mb-6">
+          <h1 className="text-5xl md:text-6xl  font-bold text-warm-gray mb-6">
             Bầu Cử & Lá Phiếu
           </h1>
           <p className="text-2xl text-warm-gray/70 max-w-3xl mx-auto">
@@ -49,8 +49,8 @@ export default function BauCuPage() {
 
         <CalloutBox type="highlight" title="Bầu Cử Là Gì?">
           <p className="text-lg">
-            <strong>Bầu cử</strong> là quá trình mà công dân sử dụng quyền bỏ phiếu để 
-            lựa chọn người đại diện cho mình trong các cơ quan quyền lực nhà nước. 
+            <strong>Bầu cử</strong> là quá trình mà công dân sử dụng quyền bỏ phiếu để
+            lựa chọn người đại diện cho mình trong các cơ quan quyền lực nhà nước.
             Đây là hình thức <strong>trực tiếp và cụ thể nhất</strong> để nhân dân thực hiện quyền làm chủ.
           </p>
         </CalloutBox>
@@ -58,13 +58,13 @@ export default function BauCuPage() {
         <SectionDivider pattern="dots" />
 
         <div className="mb-20">
-          <h2 className="text-4xl font-serif font-bold text-warm-gray text-center mb-16">
+          <h2 className="text-4xl  font-bold text-warm-gray text-center mb-16">
             Quy Trình Bầu Cử
           </h2>
           <Timeline events={electionProcess} />
         </div>
 
-        <VideoPlayer 
+        <VideoPlayer
           videoUrl="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
           title="Xem video về quy trình bầu cử"
         />
@@ -73,7 +73,7 @@ export default function BauCuPage() {
 
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           <div className="bg-gradient-to-br from-soft-red/10 to-gold/10 rounded-2xl p-8 border border-gold/20">
-            <h3 className="text-2xl font-serif font-bold text-warm-gray mb-6">
+            <h3 className="text-2xl  font-bold text-warm-gray mb-6">
               4 Nguyên Tắc Bầu Cử
             </h3>
             <ul className="space-y-4">
@@ -95,7 +95,7 @@ export default function BauCuPage() {
           </div>
 
           <div className="bg-gradient-to-br from-gold/10 to-soft-red/10 rounded-2xl p-8 border border-soft-red/20">
-            <h3 className="text-2xl font-serif font-bold text-warm-gray mb-6">
+            <h3 className="text-2xl  font-bold text-warm-gray mb-6">
               Ý Nghĩa Lá Phiếu
             </h3>
             <ul className="space-y-4">

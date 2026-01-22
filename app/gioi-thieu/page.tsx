@@ -9,7 +9,7 @@ export default function GioiThieuPage() {
         <div className="max-w-5xl mx-auto px-6 py-16">
           {/* Hero Section */}
           <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-6xl font-serif font-bold text-vn-red mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl  font-bold text-vn-red mb-6 leading-tight">
               Quyền Làm Chủ Của Nhân Dân <br />
               Thông Qua Bầu Cử
             </h1>
@@ -20,16 +20,16 @@ export default function GioiThieuPage() {
 
           {/* Key Statement */}
           <KeyStatement>
-            Bầu cử là công cụ quan trọng để nhân dân thực hiện quyền làm chủ, 
+            Bầu cử là công cụ quan trọng để nhân dân thực hiện quyền làm chủ,
             quyết định vận mệnh đất nước và lựa chọn người đại diện xứng đáng.
           </KeyStatement>
 
           {/* Main Content */}
           <div className="bg-white rounded-lg shadow-sm p-10 mb-12">
-            <h2 className="text-3xl font-serif font-bold text-vn-red mb-8">
+            <h2 className="text-3xl  font-bold text-vn-red mb-8">
               Mục Tiêu Bài Trình Bày
             </h2>
-            
+
             <BulletList items={[
               'Hiểu rõ bản chất và ý nghĩa của quyền làm chủ của nhân dân',
               'Phân tích vai trò của bầu cử trong hệ thống dân chủ',
@@ -41,7 +41,7 @@ export default function GioiThieuPage() {
           {/* Structure Overview */}
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-gradient-to-br from-vn-red/5 to-vn-bronze/5 p-8 rounded-lg border border-vn-bronze/20">
-              <h3 className="text-xl font-serif font-bold text-vn-red mb-4">
+              <h3 className="text-xl  font-bold text-vn-red mb-4">
                 Cơ Sở Lý Luận
               </h3>
               <p className="text-vn-dark leading-relaxed">
@@ -50,7 +50,7 @@ export default function GioiThieuPage() {
             </div>
 
             <div className="bg-gradient-to-br from-vn-red/5 to-vn-bronze/5 p-8 rounded-lg border border-vn-bronze/20">
-              <h3 className="text-xl font-serif font-bold text-vn-red mb-4">
+              <h3 className="text-xl  font-bold text-vn-red mb-4">
                 Nội Dung Chính
               </h3>
               <p className="text-vn-dark leading-relaxed">
@@ -59,7 +59,7 @@ export default function GioiThieuPage() {
             </div>
 
             <div className="bg-gradient-to-br from-vn-red/5 to-vn-bronze/5 p-8 rounded-lg border border-vn-bronze/20">
-              <h3 className="text-xl font-serif font-bold text-vn-red mb-4">
+              <h3 className="text-xl  font-bold text-vn-red mb-4">
                 Thực Tiễn Việt Nam
               </h3>
               <p className="text-vn-dark leading-relaxed">
@@ -68,7 +68,7 @@ export default function GioiThieuPage() {
             </div>
 
             <div className="bg-gradient-to-br from-vn-red/5 to-vn-bronze/5 p-8 rounded-lg border border-vn-bronze/20">
-              <h3 className="text-xl font-serif font-bold text-vn-red mb-4">
+              <h3 className="text-xl  font-bold text-vn-red mb-4">
                 Kết Luận
               </h3>
               <p className="text-vn-dark leading-relaxed">

@@ -10,7 +10,7 @@ export default function MoDauPage() {
     <div className="min-h-screen py-20 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* LAYOUT 1: Magazine Style với số thứ tự lớn */}
-        
+
         {/* Hero */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -26,7 +26,7 @@ export default function MoDauPage() {
               <div className="h-1 w-20 bg-blue-600" />
               <span className="text-sm font-bold tracking-widest text-blue-600">CHƯƠNG MỘT</span>
             </div>
-            <h1 className="text-7xl md:text-9xl font-serif font-bold text-gray-900 mb-6 leading-none">
+            <h1 className="text-7xl md:text-9xl  font-bold text-gray-900 mb-6 leading-none">
               MỞ ĐẦU
             </h1>
             <p className="text-2xl md:text-3xl text-gray-600 max-w-3xl font-light">
@@ -53,13 +53,13 @@ export default function MoDauPage() {
                     <iframe
                       width="100%"
                       height="100%"
-                      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                      src="https://drive.google.com/file/d/1vp0eQA-Em3EMIPAbgxNxYc6tmDXG9IyA/preview"
                       frameBorder="0"
                       allowFullScreen
                     />
                   </div>
                 ) : (
-                  <div 
+                  <div
                     onClick={() => setShowVideo(true)}
                     className="aspect-video rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center cursor-pointer hover:scale-105 transition-transform mb-4"
                   >
@@ -110,11 +110,11 @@ export default function MoDauPage() {
                 <div className="flex-1">
                   <h2 className="text-3xl font-bold text-gray-900 mb-4">Khái niệm cơ bản</h2>
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                    Quyền làm chủ của nhân dân là nền tảng của chế độ dân chủ, thể hiện qua việc 
+                    Quyền làm chủ của nhân dân là nền tảng của chế độ dân chủ, thể hiện qua việc
                     nhân dân có quyền quyết định mọi vấn đề quan trọng của đất nước.
                   </p>
                   <div className="bg-blue-50 rounded-2xl p-6 border-l-4 border-blue-600">
-                    <p className="font-serif italic text-xl text-blue-900 mb-2">
+                    <p className=" italic text-xl text-blue-900 mb-2">
                       "Tất cả quyền lực nhà nước thuộc về nhân dân"
                     </p>
                     <p className="text-sm text-blue-700">— Hiến pháp 2013 —</p>
@@ -179,7 +179,7 @@ export default function MoDauPage() {
         >
           <h3 className="text-4xl font-bold mb-4">Tóm tắt chương</h3>
           <p className="text-xl leading-relaxed max-w-4xl mx-auto opacity-90">
-            Quyền làm chủ của nhân dân là nền tảng của nền dân chủ xã hội chủ nghĩa, 
+            Quyền làm chủ của nhân dân là nền tảng của nền dân chủ xã hội chủ nghĩa,
             được thể hiện qua nhiều hình thức khác nhau, trong đó bầu cử là cách thức quan trọng nhất.
           </p>
         </motion.div>

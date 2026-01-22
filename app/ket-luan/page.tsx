@@ -19,7 +19,7 @@ export default function KetLuanPage() {
           className="text-center mb-16"
         >
           <div className="text-8xl mb-6">🎯</div>
-          <h1 className="text-6xl md:text-7xl font-serif font-bold text-warm-gray mb-6">
+          <h1 className="text-6xl md:text-7xl  font-bold text-warm-gray mb-6">
             KẾT LUẬN
           </h1>
           <div className="h-1 w-32 bg-gradient-to-r from-green-600 to-teal-600 mx-auto mb-8" />
@@ -38,12 +38,12 @@ export default function KetLuanPage() {
             className="space-y-8"
           >
             <section className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-green-200/50">
-              <h2 className="text-3xl font-serif font-bold text-warm-gray mb-4 flex items-center gap-3">
+              <h2 className="text-3xl  font-bold text-warm-gray mb-4 flex items-center gap-3">
                 <span className="text-4xl">📝</span>
                 Tổng kết chính
               </h2>
               <p className="text-lg text-warm-gray/80 leading-relaxed mb-6">
-                Qua quá trình tìm hiểu, chúng ta đã thấy rõ tầm quan trọng của quyền làm chủ 
+                Qua quá trình tìm hiểu, chúng ta đã thấy rõ tầm quan trọng của quyền làm chủ
                 nhân dân và vai trò then chốt của bầu cử trong việc thực hiện quyền đó.
               </p>
               <div className="space-y-4">
@@ -87,7 +87,7 @@ export default function KetLuanPage() {
             </section>
 
             <section className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-green-200/50">
-              <h2 className="text-3xl font-serif font-bold text-warm-gray mb-4 flex items-center gap-3">
+              <h2 className="text-3xl  font-bold text-warm-gray mb-4 flex items-center gap-3">
                 <span className="text-4xl">🚀</span>
                 Triển vọng tương lai
               </h2>
@@ -114,7 +114,7 @@ export default function KetLuanPage() {
             </section>
 
             <section className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 backdrop-blur-sm rounded-2xl p-8 shadow-lg border-2 border-gold/30">
-              <h2 className="text-3xl font-serif font-bold text-warm-gray mb-4 flex items-center gap-3">
+              <h2 className="text-3xl  font-bold text-warm-gray mb-4 flex items-center gap-3">
                 <span className="text-4xl">💪</span>
                 Lời kêu gọi hành động
               </h2>
@@ -151,11 +151,11 @@ export default function KetLuanPage() {
           >
             {/* Video Section */}
             <div className="bg-gradient-to-br from-green-500/10 to-teal-500/10 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-green-300/50">
-              <h3 className="text-2xl font-serif font-bold text-warm-gray mb-6 flex items-center gap-3">
+              <h3 className="text-2xl  font-bold text-warm-gray mb-6 flex items-center gap-3">
                 <span className="text-3xl">🎬</span>
                 Video tổng kết
               </h3>
-              
+
               {showVideo ? (
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -165,7 +165,7 @@ export default function KetLuanPage() {
                   <iframe
                     width="100%"
                     height="100%"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    src="https://drive.google.com/file/d/1j8U2d-tkKaMm3HbfB27QVx97BD_QezEy/preview"
                     title="Kết luận"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -197,25 +197,25 @@ export default function KetLuanPage() {
 
             {/* Key Messages */}
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-green-200/50">
-              <h3 className="text-2xl font-serif font-bold text-warm-gray mb-6 flex items-center gap-3">
+              <h3 className="text-2xl  font-bold text-warm-gray mb-6 flex items-center gap-3">
                 <span className="text-3xl">✨</span>
                 Thông điệp chính
               </h3>
               <div className="space-y-6">
                 <div className="bg-gradient-to-r from-red-50 to-yellow-50 rounded-xl p-6 border-l-4 border-red-500">
-                  <p className="text-xl font-serif italic text-warm-gray text-center">
+                  <p className="text-xl  italic text-warm-gray text-center">
                     "Dân là gốc của nước,<br />gốc vững thì nước bền"
                   </p>
                 </div>
 
                 <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-6 border-l-4 border-blue-500">
-                  <p className="text-xl font-serif italic text-warm-gray text-center">
+                  <p className="text-xl  italic text-warm-gray text-center">
                     "Tất cả quyền lực nhà nước<br />thuộc về nhân dân"
                   </p>
                 </div>
 
                 <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl p-6 border-l-4 border-purple-500">
-                  <p className="text-xl font-serif italic text-warm-gray text-center">
+                  <p className="text-xl  italic text-warm-gray text-center">
                     "Mỗi công dân là một phần<br />của sức mạnh quốc gia"
                   </p>
                 </div>
@@ -224,7 +224,7 @@ export default function KetLuanPage() {
 
             {/* Review sections */}
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-green-200/50">
-              <h3 className="text-2xl font-serif font-bold text-warm-gray mb-6 flex items-center gap-3">
+              <h3 className="text-2xl  font-bold text-warm-gray mb-6 flex items-center gap-3">
                 <span className="text-3xl">📚</span>
                 Ôn tập 5 chương
               </h3>
@@ -263,12 +263,12 @@ export default function KetLuanPage() {
           className="bg-gradient-to-r from-green-600 to-teal-600 text-white rounded-2xl p-10 shadow-2xl text-center mb-10"
         >
           <div className="text-6xl mb-6">🌟</div>
-          <h3 className="text-4xl font-serif font-bold mb-6">
+          <h3 className="text-4xl  font-bold mb-6">
             Cảm ơn bạn đã theo dõi!
           </h3>
           <p className="text-xl leading-relaxed max-w-4xl mx-auto mb-8">
-            Hy vọng qua hành trình này, bạn đã hiểu rõ hơn về quyền làm chủ của nhân dân 
-            và tầm quan trọng của việc tham gia vào các hoạt động dân chủ. Hãy là một công dân 
+            Hy vọng qua hành trình này, bạn đã hiểu rõ hơn về quyền làm chủ của nhân dân
+            và tầm quan trọng của việc tham gia vào các hoạt động dân chủ. Hãy là một công dân
             tích cực, có trách nhiệm và đóng góp vào sự phát triển của đất nước!
           </p>
 

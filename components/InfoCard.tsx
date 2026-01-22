@@ -28,7 +28,7 @@ export default function InfoCard({ icon, title, description, delay = 0 }: InfoCa
         <div className="text-5xl mb-4 transform group-hover:scale-110 transition-transform duration-300">
           {icon}
         </div>
-        <h3 className="text-2xl font-serif font-bold text-warm-gray mb-3">
+        <h3 className="text-2xl  font-bold text-warm-gray mb-3">
           {title}
         </h3>
         <p className="text-warm-gray/80 leading-relaxed">

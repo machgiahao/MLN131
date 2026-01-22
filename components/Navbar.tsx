@@ -20,7 +20,7 @@ export default function Navbar({ activeTab, onTabChange }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-warm-yellow font-serif text-xl font-bold">
+            <h1 className="text-warm-yellow  text-xl font-bold">
               Quyền Làm Chủ Của Nhân Dân
             </h1>
           </div>
@@ -31,11 +31,10 @@ export default function Navbar({ activeTab, onTabChange }: NavbarProps) {
               key={tab.id}
               onClick={() => onTabChange(tab.id)}
               className={`
-                px-6 py-3 mx-1 font-serif text-sm whitespace-nowrap transition-all duration-300
-                ${
-                  activeTab === tab.id
-                    ? 'bg-academic-red text-white border-b-4 border-warm-yellow font-bold'
-                    : 'text-warm-yellow hover:bg-academic-red/50'
+                px-6 py-3 mx-1  text-sm whitespace-nowrap transition-all duration-300
+                ${activeTab === tab.id
+                  ? 'bg-academic-red text-white border-b-4 border-warm-yellow font-bold'
+                  : 'text-warm-yellow hover:bg-academic-red/50'
                 }
               `}
             >

@@ -9,19 +9,19 @@ export default function CoSoLyLuanPage() {
     <PageTransition>
       <div className="min-h-screen pattern-bg">
         <div className="max-w-5xl mx-auto px-6 py-16">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-vn-red mb-12 text-center">
+          <h1 className="text-4xl md:text-5xl  font-bold text-vn-red mb-12 text-center">
             Cơ Sở Lý Luận
           </h1>
 
           <PresentationSection title="Quyền Làm Chủ Của Nhân Dân Là Gì?">
             <KeyStatement>
-              Quyền làm chủ là quyền tối cao của nhân dân trong việc quyết định 
-              mọi vấn đề của đất nước, được thực hiện trực tiếp hoặc 
+              Quyền làm chủ là quyền tối cao của nhân dân trong việc quyết định
+              mọi vấn đề của đất nước, được thực hiện trực tiếp hoặc
               thông qua đại diện do nhân dân bầu ra.
             </KeyStatement>
 
             <div className="bg-white rounded-lg shadow-sm p-8">
-              <h3 className="text-2xl font-serif font-bold text-vn-red mb-6">
+              <h3 className="text-2xl  font-bold text-vn-red mb-6">
                 Đặc Điểm Cơ Bản
               </h3>
               <BulletList items={[
@@ -35,7 +35,7 @@ export default function CoSoLyLuanPage() {
 
           <PresentationSection title="Bầu Cử - Công Cụ Thực Hiện Quyền Làm Chủ">
             <div className="bg-white rounded-lg shadow-sm p-8">
-              <h3 className="text-2xl font-serif font-bold text-vn-red mb-6">
+              <h3 className="text-2xl  font-bold text-vn-red mb-6">
                 Vai Trò Của Bầu Cử
               </h3>
               <BulletList items={[
@@ -47,13 +47,13 @@ export default function CoSoLyLuanPage() {
             </div>
           </PresentationSection>
 
-          <QuoteBox 
+          <QuoteBox
             text="Tất cả quyền lực nhà nước thuộc về nhân dân mà nền tảng là liên minh giữa giai cấp công nhân với giai cấp nông dân và đội ngũ trí thức"
             author="Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam 2013, Điều 2"
           />
 
           <div className="bg-gradient-to-r from-vn-red/5 to-vn-bronze/5 rounded-lg p-8 border-l-4 border-vn-red">
-            <h3 className="text-2xl font-serif font-bold text-vn-dark mb-4">
+            <h3 className="text-2xl  font-bold text-vn-dark mb-4">
               Nguyên Tắc Bầu Cử Dân Chủ
             </h3>
             <div className="grid md:grid-cols-2 gap-6 mt-6">

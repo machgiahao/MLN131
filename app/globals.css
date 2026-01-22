@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&family=Noto+Serif:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&subset=vietnamese&display=swap');
+
+
 
 * {
   margin: 0;
@@ -17,13 +19,15 @@ html {
 body {
   background: linear-gradient(135deg, #FFF8F0 0%, #F5E6D3 100%);
   color: #4A4A4A;
-  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Playfair Display', 'Noto Sans', -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.8;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1, 'mark' 1, 'mkmk' 1;
   text-rendering: optimizeLegibility;
 }
+
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
@@ -44,7 +48,8 @@ body {
 }
 
 /* Smooth transitions */
-button, a {
+button,
+a {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -56,6 +61,6 @@ button, a {
 
 /* Paper texture */
 .paper-texture {
-  background-image: 
+  background-image:
     repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(212, 175, 55, 0.02) 2px, rgba(212, 175, 55, 0.02) 4px);
 }

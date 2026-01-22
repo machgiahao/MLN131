@@ -9,7 +9,7 @@ export default function NoiDungChinhPage() {
     <PageTransition>
       <div className="min-h-screen pattern-bg">
         <div className="max-w-5xl mx-auto px-6 py-16">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-vn-red mb-12 text-center">
+          <h1 className="text-4xl md:text-5xl  font-bold text-vn-red mb-12 text-center">
             Nội Dung Chính
           </h1>
 
@@ -20,7 +20,7 @@ export default function NoiDungChinhPage() {
             </KeyStatement>
 
             <div className="bg-white rounded-lg shadow-sm p-8">
-              <h3 className="text-2xl font-serif font-bold text-vn-red mb-6">
+              <h3 className="text-2xl  font-bold text-vn-red mb-6">
                 Các Bước Thực Hiện
               </h3>
               <BulletList items={[
@@ -95,7 +95,7 @@ export default function NoiDungChinhPage() {
 
           <div className="bg-gradient-to-r from-vn-red/5 to-vn-bronze/5 rounded-lg p-8 border-l-4 border-vn-bronze">
             <p className="text-xl text-vn-dark leading-relaxed italic">
-              "Lá phiếu không chỉ là quyền – mà là trách nhiệm của mỗi công dân 
+              "Lá phiếu không chỉ là quyền – mà là trách nhiệm của mỗi công dân
               đối với vận mệnh đất nước."
             </p>
           </div>

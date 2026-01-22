@@ -19,14 +19,14 @@ export default function VideoSection({ title, videoUrl, duration = '1-2 phút' }
         onClick={() => setIsExpanded(!isExpanded)}
         className="w-full px-6 py-4 bg-academic-red hover:bg-academic-red/80 transition-colors flex items-center justify-between text-left"
       >
-        <span className="font-serif text-lg text-white">
+        <span className=" text-lg text-white">
           {title} ({duration})
         </span>
         <span className="text-warm-yellow text-2xl">
           {isExpanded ? '−' : '+'}
         </span>
       </button>
-      
+
       {isExpanded && (
         <div className="p-6 bg-black/30">
           <video

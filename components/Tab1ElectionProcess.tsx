@@ -7,8 +7,8 @@ export default function Tab1ElectionProcess() {
     <div>
       <ContentSection title="Bầu Cử Là Gì?">
         <p className="text-lg">
-          <strong>Bầu cử</strong> là quá trình mà công dân sử dụng quyền bỏ phiếu để lựa chọn 
-          người đại diện cho mình trong các cơ quan quyền lực nhà nước. Đây là công cụ quan trọng 
+          <strong>Bầu cử</strong> là quá trình mà công dân sử dụng quyền bỏ phiếu để lựa chọn
+          người đại diện cho mình trong các cơ quan quyền lực nhà nước. Đây là công cụ quan trọng
           để thực hiện quyền dân chủ và quyền làm chủ của nhân dân.
         </p>
       </ContentSection>
@@ -37,11 +37,11 @@ export default function Tab1ElectionProcess() {
               1
             </div>
             <div>
-              <h4 className="font-serif font-bold text-xl text-warm-yellow mb-2">
+              <h4 className=" font-bold text-xl text-warm-yellow mb-2">
                 Đăng Ký Cử Tri
               </h4>
               <p>
-                Công dân đủ điều kiện đăng ký trong danh sách cử tri tại địa phương. 
+                Công dân đủ điều kiện đăng ký trong danh sách cử tri tại địa phương.
                 Mỗi công dân chỉ được đăng ký một lần tại một địa điểm.
               </p>
             </div>
@@ -52,11 +52,11 @@ export default function Tab1ElectionProcess() {
               2
             </div>
             <div>
-              <h4 className="font-serif font-bold text-xl text-warm-yellow mb-2">
+              <h4 className=" font-bold text-xl text-warm-yellow mb-2">
                 Danh Sách Ứng Cử Viên
               </h4>
               <p>
-                Các ứng cử viên được giới thiệu, công bố thông tin, tiểu sử, 
+                Các ứng cử viên được giới thiệu, công bố thông tin, tiểu sử,
                 chương trình hành động để cử tri tìm hiểu.
               </p>
             </div>
@@ -67,11 +67,11 @@ export default function Tab1ElectionProcess() {
               3
             </div>
             <div>
-              <h4 className="font-serif font-bold text-xl text-warm-yellow mb-2">
+              <h4 className=" font-bold text-xl text-warm-yellow mb-2">
                 Ngày Bầu Cử
               </h4>
               <p>
-                Cử tri đến điểm bỏ phiếu, xuất trình giấy tờ, nhận phiếu bầu, 
+                Cử tri đến điểm bỏ phiếu, xuất trình giấy tờ, nhận phiếu bầu,
                 và thực hiện quyền bỏ phiếu của mình.
               </p>
             </div>
@@ -82,11 +82,11 @@ export default function Tab1ElectionProcess() {
               4
             </div>
             <div>
-              <h4 className="font-serif font-bold text-xl text-warm-yellow mb-2">
+              <h4 className=" font-bold text-xl text-warm-yellow mb-2">
                 Bỏ Phiếu Kín
               </h4>
               <p>
-                Cử tri vào phòng kín, đánh dấu vào ứng cử viên mà mình lựa chọn. 
+                Cử tri vào phòng kín, đánh dấu vào ứng cử viên mà mình lựa chọn.
                 Không ai được theo dõi hoặc ép buộc cử tri.
               </p>
             </div>
@@ -97,11 +97,11 @@ export default function Tab1ElectionProcess() {
               5
             </div>
             <div>
-              <h4 className="font-serif font-bold text-xl text-warm-yellow mb-2">
+              <h4 className=" font-bold text-xl text-warm-yellow mb-2">
                 Kiểm Phiếu
               </h4>
               <p>
-                Hội đồng bầu cử tiến hành kiểm phiếu công khai, minh bạch. 
+                Hội đồng bầu cử tiến hành kiểm phiếu công khai, minh bạch.
                 Mọi gian lận đều bị xử lý nghiêm khắc.
               </p>
             </div>
@@ -112,11 +112,11 @@ export default function Tab1ElectionProcess() {
               6
             </div>
             <div>
-              <h4 className="font-serif font-bold text-xl text-warm-yellow mb-2">
+              <h4 className=" font-bold text-xl text-warm-yellow mb-2">
                 Công Bố Kết Quả
               </h4>
               <p>
-                Kết quả bầu cử được công bố rộng rãi. Các đại biểu trúng cử 
+                Kết quả bầu cử được công bố rộng rãi. Các đại biểu trúng cử
                 chính thức nhận nhiệm vụ đại diện cho nhân dân.
               </p>
             </div>
@@ -126,13 +126,13 @@ export default function Tab1ElectionProcess() {
 
       <ContentSection title="Ý Nghĩa Của Lá Phiếu Cử Tri">
         <p className="text-lg">
-          Lá phiếu không chỉ là một tờ giấy đơn thuần. Đó là tiếng nói, là quyền lực, 
-          là trách nhiệm của mỗi công dân. Mỗi lá phiếu góp phần quyết định tương lai 
+          Lá phiếu không chỉ là một tờ giấy đơn thuần. Đó là tiếng nói, là quyền lực,
+          là trách nhiệm của mỗi công dân. Mỗi lá phiếu góp phần quyết định tương lai
           của đất nước, của cộng đồng, và của chính bản thân người bỏ phiếu.
         </p>
         <div className="mt-4 p-6 bg-academic-red/30 rounded-lg">
           <p className="text-lg">
-            📌 <strong>Lưu ý:</strong> Quyền bầu cử là quyền căn bản nhưng cũng là 
+            📌 <strong>Lưu ý:</strong> Quyền bầu cử là quyền căn bản nhưng cũng là
             nghĩa vụ công dân. Không bỏ phiếu có nghĩa là từ bỏ quyền làm chủ của chính mình.
           </p>
         </div>
@@ -140,8 +140,8 @@ export default function Tab1ElectionProcess() {
 
       <QuoteBlock text="Lá phiếu không chỉ là quyền – mà là trách nhiệm." />
 
-      <VideoSection 
-        title="Xem video minh họa" 
+      <VideoSection
+        title="Xem video minh họa"
         duration="5-6 phút"
         videoUrl="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
       />
