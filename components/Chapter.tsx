@@ -11,10 +11,10 @@ interface ChapterProps {
   isActive: boolean;
 }
 
-export default function Chapter({ 
-  number, 
-  title, 
-  description, 
+export default function Chapter({
+  number,
+  title,
+  description,
   videoUrl
 }: ChapterProps) {
   const containerRef = useRef<HTMLElement>(null);
@@ -43,9 +43,9 @@ export default function Chapter({
       className="min-h-screen flex items-center justify-center relative snap-start"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full grid lg:grid-cols-2 gap-12 items-center">
-        
+
         {/* Text Content */}
-        <motion.div 
+        <motion.div
           style={{ opacity }}
           className="space-y-6 lg:space-y-8"
         >
@@ -72,18 +72,17 @@ export default function Chapter({
           style={{ scale }}
           className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl"
         >
-          <motion.video
-            ref={videoRef}
+          <motion.iframe
             src={videoUrl}
-            controls
-            className="w-full h-full object-cover"
+            className="w-full h-full"
+            allow="autoplay; fullscreen"
+            allowFullScreen
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           />
-          
-          {/* Subtle gradient overlay */}
+
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
         </motion.div>
 
