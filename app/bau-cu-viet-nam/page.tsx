@@ -211,9 +211,6 @@ export default function BauCuVietNamPage() {
             Bầu cử đại biểu Quốc hội và Hội đồng nhân dân là quyền và nghĩa vụ thiêng liêng. 
             Việc thực hiện đúng quy trình 6Đ giúp đảm bảo cuộc bầu cử diễn ra dân chủ, đúng pháp luật.
           </p>
-          <div className="inline-block px-6 py-2 border border-slate-600 rounded-full text-sm">
-            © Giáo dục Công dân - Pháp luật Việt Nam
-          </div>
         </div>
       </footer>
 
