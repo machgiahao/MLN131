@@ -55,7 +55,7 @@ export default function MoDauPage() {
                     <iframe
                       width="100%"
                       height="100%"
-                      src="https://drive.google.com/file/d/1vp0eQA-Em3EMIPAbgxNxYc6tmDXG9IyA/preview"
+                      src="https://drive.google.com/file/d/1InNxJfhI2P-2keYuyizKpb63Yp9VvNEH/preview"
                       frameBorder="0"
                       allowFullScreen
                     />
@@ -110,7 +110,7 @@ export default function MoDauPage() {
                 </div>
                 <div className="flex-1">
                   <h2 className="text-3xl font-bold text-gray-900 mb-6">Khái niệm chủ chốt</h2>
-                  
+
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="bg-gray-50 p-6 rounded-2xl hover:bg-blue-50 transition-colors duration-300">
                       <h3 className="text-xl font-bold text-blue-800 mb-3">Cử tri</h3>
@@ -182,13 +182,13 @@ export default function MoDauPage() {
 
             {/* Card 3: Ý nghĩa lá phiếu (Thay thế phần Forms cũ) */}
             <article className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-3xl p-10 shadow-xl text-white relative overflow-hidden">
-               {/* Background decoration */}
+              {/* Background decoration */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full mix-blend-overlay filter blur-3xl opacity-20 animate-pulse"></div>
-              
+
               <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
                 Ý nghĩa của Lá phiếu
               </h2>
-              
+
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/20 transition-all group">
                   <h3 className="text-lg font-bold mb-2 text-blue-200">Quyền làm chủ</h3>
