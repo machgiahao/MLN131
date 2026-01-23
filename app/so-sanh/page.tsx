@@ -10,7 +10,7 @@ export default function SoSanhPage() {
   return (
     <div className="min-h-screen pt-36 pb-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
-        
+
         {/* --- HERO SECTION --- */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -23,14 +23,14 @@ export default function SoSanhPage() {
           </h1>
           <div className="h-1.5 w-40 bg-gradient-to-r from-blue-600 to-red-600 mx-auto mb-8 rounded-full" />
           <p className="text-2xl text-slate-600 max-w-4xl mx-auto font-light leading-relaxed">
-            Tại sao cùng hướng tới phát triển, nhưng Việt Nam kiên quyết <span className="font-bold text-red-600">không áp dụng</span> mô hình "Tam quyền phân lập" của Mỹ?
+            Tại sao cùng hướng tới phát triển, nhưng Việt Nam <span className="font-bold text-red-600">không áp dụng</span> mô hình "Tam quyền phân lập" của Mỹ?
           </p>
         </motion.div>
 
         {/* --- PHẦN 1: CẤU TRÚC CỐT LÕI (PHILOSOPHY) --- */}
         <div className="grid md:grid-cols-2 gap-8 mb-20">
           {/* USA Card */}
-          <motion.div 
+          <motion.div
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
@@ -51,7 +51,7 @@ export default function SoSanhPage() {
           </motion.div>
 
           {/* Vietnam Card */}
-          <motion.div 
+          <motion.div
             initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: true }}
@@ -73,7 +73,7 @@ export default function SoSanhPage() {
         </div>
 
         {/* --- PHẦN 2: 3 ĐIỂM KHÁC BIỆT VẬN HÀNH --- */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -101,7 +101,7 @@ export default function SoSanhPage() {
             ].map((item, i) => (
               <div key={i} className={`bg-white rounded-2xl p-6 shadow-lg border-2 ${item.highlight ? 'border-yellow-400 transform scale-105 z-10' : 'border-transparent'}`}>
                 <h3 className="text-xl font-bold text-center mb-6 text-slate-800">{item.title}</h3>
-                
+
                 <div className="space-y-4">
                   <div className="bg-blue-50 p-3 rounded-lg">
                     <div className="text-xs font-bold text-blue-600 mb-1">🇺🇸 HOA KỲ</div>
@@ -118,7 +118,7 @@ export default function SoSanhPage() {
         </motion.div>
 
         {/* --- PHẦN BỔ SUNG: VIDEO SECTION (ĐÃ THÊM LẠI) --- */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
@@ -138,7 +138,7 @@ export default function SoSanhPage() {
                   className="absolute inset-0 w-full h-full"
                 />
               ) : (
-                <div 
+                <div
                   onClick={() => setShowVideo(true)}
                   className="absolute inset-0 flex flex-col items-center justify-center cursor-pointer group bg-gradient-to-br from-slate-800 to-slate-900 hover:from-blue-900 hover:to-slate-900 transition-all"
                 >
@@ -155,7 +155,7 @@ export default function SoSanhPage() {
 
         {/* --- PHẦN 3: THỰC TẾ & HỆ QUẢ (REALITY CHECK) --- */}
         <div className="grid md:grid-cols-12 gap-10 mb-20 items-center">
-          <motion.div 
+          <motion.div
             className="md:col-span-5"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -163,7 +163,7 @@ export default function SoSanhPage() {
           >
             <div className="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 rounded-3xl shadow-2xl">
               <h3 className="text-2xl font-bold mb-6 text-yellow-400">Thực tế chứng minh</h3>
-              
+
               <div className="mb-6 border-b border-white/10 pb-6">
                 <h4 className="font-bold text-lg mb-2">Mô hình Mỹ: Cạnh tranh & Phân cực</h4>
                 <p className="text-sm text-slate-300 mb-2">
@@ -174,26 +174,26 @@ export default function SoSanhPage() {
               <div>
                 <h4 className="font-bold text-lg mb-2">Mô hình Việt Nam: Thống nhất & Ổn định</h4>
                 <p className="text-sm text-slate-300">
-                   Huy động nguồn lực thần tốc trong đại dịch COVID-19. Duy trì ổn định chiến lược để tập trung phát triển kinh tế dài hạn.
+                  Huy động nguồn lực thần tốc trong đại dịch COVID-19. Duy trì ổn định chiến lược để tập trung phát triển kinh tế dài hạn.
                 </p>
               </div>
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="md:col-span-7"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
             <h3 className="text-3xl font-bold text-slate-900 mb-6">
-              Không Tam quyền phân lập,<br/>
+              Không Tam quyền phân lập,<br />
               <span className="text-red-600">Kiểm soát quyền lực thế nào?</span>
             </h3>
             <p className="text-lg text-slate-600 mb-6">
               Việt Nam sử dụng cơ chế <b>"Nhốt quyền lực trong lồng cơ chế"</b> với 3 lớp kiểm soát chặt chẽ:
             </p>
-            
+
             <div className="space-y-4">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center font-bold text-red-600 mt-1">1</div>
