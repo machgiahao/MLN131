@@ -82,7 +82,7 @@ export default function IntroPageImpressive() {
             {/* Sử dụng mix-blend-difference để chữ tương phản mạnh với nền động */}
             <div className="relative mix-blend-difference text-white select-none pointer-events-none flex flex-col items-center"> 
                 <motion.h3 variants={textVariants} className="text-lg md:text-2xl lg:text-3xl tracking-[0.5em] md:tracking-[0.8em] font-light mb-2 md:mb-4 uppercase text-yellow-200 text-center">
-                    Việt Nam Dân Chủ Cộng Hòa
+                    Cộng Hòa Xã Hội Chủ Nghĩa Việt Nam
                 </motion.h3>
                 
                 {/* Thay đổi ở đây: Dùng text-[15vw] để chữ tự co giãn theo chiều ngang */}
