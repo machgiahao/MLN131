@@ -83,7 +83,7 @@ export default function BauCuHoaKyPage() {
                     <iframe
                       width="100%"
                       height="100%"
-                      src="https://drive.google.com/file/d/10erMZ_5fmDWeZLPVHUtgsSBFkWD1nJtg/preview"
+                      src="https://drive.google.com/file/d/1C5WA4L-oJENP5hZKe9MKMWV0eQkRk4ta/preview"
                       frameBorder="0"
                       allowFullScreen
                     />
@@ -95,7 +95,7 @@ export default function BauCuHoaKyPage() {
                   >
                     <div className="text-center text-white">
                       <div className="text-8xl mb-4 group-hover:scale-110 transition-transform">▶</div>
-                      <p className="text-3xl font-bold">WATCH VIDEO</p>
+                      <p className="text-3xl font-bold">Xem video</p>
                     </div>
                   </div>
                 )}
@@ -103,7 +103,7 @@ export default function BauCuHoaKyPage() {
                   onClick={() => setShowVideo(!showVideo)}
                   className="mt-6 w-full py-5 bg-gradient-to-r from-blue-600 to-red-600 text-white rounded-xl font-bold text-xl hover:shadow-2xl hover:shadow-blue-500/50 transition-all"
                 >
-                  {showVideo ? 'HIDE VIDEO' : 'PLAY VIDEO'}
+                  {showVideo ? 'ẨN VIDEO' : 'XEM VIDEO'}
                 </button>
               </div>
             </div>
